@@ -1,0 +1,63 @@
+{
+  "name": "danwisoft-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "template": "node scripts/prepare-template.mjs",
+    "build": "node scripts/build.mjs",
+    "precheck": "npm run template",
+    "check": "tsc --noEmit",
+    "predev": "npm run template",
+    "dev": "node --env-file-if-exists=.env --import tsx src/node.ts",
+    "start": "node --env-file-if-exists=.env backend/index.js",
+    "worker": "node --env-file-if-exists=.env backend/editorial-worker.js",
+    "editorial:worker": "node --env-file-if-exists=.env backend/editorial-worker.js",
+    "migrate": "node --env-file-if-exists=.env --import tsx scripts/migrate.ts",
+    "seed": "node --env-file-if-exists=.env --import tsx scripts/seed.ts",
+    "pretest": "npm run template",
+    "test": "tsx tests/integration.ts",
+    "pretest:insights": "npm run template",
+    "test:insights": "tsx tests/insights.ts",
+    "pretest:editorial": "npm run template",
+    "test:editorial": "tsx tests/editorial-workflows.ts",
+    "pretest:operations": "npm run template",
+    "test:operations": "tsx tests/operations.ts",
+    "pretest:operations-boundaries": "npm run template",
+    "test:operations-boundaries": "tsx tests/operations-boundaries.ts",
+    "test:mail": "tsx tests/mail-node.ts",
+    "pretest:content": "npm run template",
+    "test:content": "tsx tests/content-alignment.ts",
+    "pretest:faq": "npm run template",
+    "test:faq": "tsx tests/faq-final.ts",
+    "pretest:motion": "npm run template",
+    "test:motion": "tsx tests/motion-content.ts",
+    "test:redteam": "node scripts/redteam-runner.mjs",
+    "test:redteam:full": "node scripts/redteam-runner.mjs --full"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.132.1",
+    "@mozilla/readability": "^0.6.0",
+    "dompurify": "^3.4.16",
+    "ipaddr.js": "^2.5.0",
+    "jsdom": "^30.1.2",
+    "pg": "^8.16.3",
+    "sharp": "^0.35.5",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.3.14",
+    "@eslint/js": "^10.0.1",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^22.18.0",
+    "@types/pg": "^8.15.5",
+    "esbuild": "^0.25.10",
+    "eslint": "^10.12.0",
+    "globals": "^17.13.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=24.15.0 <25"
+  }
+}

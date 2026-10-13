@@ -1,0 +1,1556 @@
+[
+  {
+    "key": "danwi-faq-01",
+    "slug": "danwi-faq-01",
+    "title": "어떤 개발을 의뢰할 수 있나요?",
+    "question": "어떤 개발을 의뢰할 수 있나요?",
+    "body": "홈페이지·웹앱·CMS, 관리자·업무 시스템, AI·업무 자동화와 검색 대응을 상담합니다. 새로운 서비스 제작뿐 아니라 기존 홈페이지 개선, 자료 이전과 업무 연결도 검토합니다. 목표와 현재 불편한 점을 알려주시면 제공 범위를 함께 정리합니다.",
+    "answer": "홈페이지·웹앱·CMS, 관리자·업무 시스템, AI·업무 자동화와 검색 대응을 상담합니다. 새로운 서비스 제작뿐 아니라 기존 홈페이지 개선, 자료 이전과 업무 연결도 검토합니다. 목표와 현재 불편한 점을 알려주시면 제공 범위를 함께 정리합니다.",
+    "scope": "HOME",
+    "category": "공통",
+    "sortOrder": 1,
+    "featuredOnHome": true,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "consultation-support",
+    "mergedInto": "",
+    "displayOrder": 1,
+    "synonyms": [
+      "어떤 개발을 의뢰할 수 있나요",
+      "공통"
+    ]
+  },
+  {
+    "key": "danwi-faq-02",
+    "slug": "danwi-faq-02",
+    "title": "기획서 없이도 상담할 수 있나요?",
+    "question": "기획서 없이도 상담할 수 있나요?",
+    "body": "완성된 기획서가 없어도 목표와 현재 불편한 업무, 필요한 기능부터 정리할 수 있습니다. 사용 중인 자료나 참고 화면이 있으면 함께 확인합니다. 상담 후 포함·제외 범위와 추가 확인 사항을 정리합니다.",
+    "answer": "완성된 기획서가 없어도 목표와 현재 불편한 업무, 필요한 기능부터 정리할 수 있습니다. 사용 중인 자료나 참고 화면이 있으면 함께 확인합니다. 상담 후 포함·제외 범위와 추가 확인 사항을 정리합니다.",
+    "scope": "HOME",
+    "category": "공통",
+    "sortOrder": 2,
+    "featuredOnHome": true,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "consultation-support",
+    "mergedInto": "",
+    "displayOrder": 2,
+    "synonyms": []
+  },
+  {
+    "key": "danwi-faq-03",
+    "slug": "danwi-faq-03",
+    "title": "기존 사이트나 시스템을 개선할 수도 있나요?",
+    "question": "기존 사이트나 시스템을 개선할 수도 있나요?",
+    "body": "현재 소스, 운영 환경과 접근 권한을 확인한 뒤 개선 범위를 정합니다. 유지할 디자인과 기능, 변경 시 데이터와 사용 흐름에 미치는 영향을 함께 검토합니다. 전체 재제작이 필요한지는 확인 후 판단합니다.",
+    "answer": "현재 소스, 운영 환경과 접근 권한을 확인한 뒤 개선 범위를 정합니다. 유지할 디자인과 기능, 변경 시 데이터와 사용 흐름에 미치는 영향을 함께 검토합니다. 전체 재제작이 필요한지는 확인 후 판단합니다.",
+    "scope": "HOME",
+    "category": "공통",
+    "sortOrder": 3,
+    "featuredOnHome": true,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "consultation-support",
+    "mergedInto": "",
+    "displayOrder": 3,
+    "synonyms": []
+  },
+  {
+    "key": "danwi-faq-04",
+    "slug": "danwi-faq-04",
+    "title": "개발 기간과 비용은 어떻게 정하나요?",
+    "question": "개발 기간과 비용은 어떻게 정하나요?",
+    "body": "필요한 기능과 기존 자료 이전, 외부 서비스 연결과 검수 범위에 따라 산정합니다. 자료 준비와 고객 검토 일정도 함께 반영합니다. 제작비와 공개 후의 운영비는 구분해 안내하며, 포함·제외 범위를 먼저 합의합니다.",
+    "answer": "필요한 기능과 기존 자료 이전, 외부 서비스 연결과 검수 범위에 따라 산정합니다. 자료 준비와 고객 검토 일정도 함께 반영합니다. 제작비와 공개 후의 운영비는 구분해 안내하며, 포함·제외 범위를 먼저 합의합니다.",
+    "scope": "HOME",
+    "category": "공통",
+    "sortOrder": 4,
+    "featuredOnHome": true,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "consultation-support",
+    "mergedInto": "",
+    "displayOrder": 4,
+    "synonyms": [
+      "개발 기간과 비용은 어떻게 정하나요",
+      "공통"
+    ]
+  },
+  {
+    "key": "danwi-faq-05",
+    "slug": "danwi-faq-05",
+    "title": "회사 자료나 외부 데이터를 활용한 AI 기능도 가능한가요?",
+    "question": "회사 자료나 외부 데이터를 활용한 AI 기능도 가능한가요?",
+    "body": "사용이 허용된 자료와 업무 목적을 확인해 검색·답변·자동화 범위를 설계합니다. 회사 문서에서 관련 내용을 찾거나 문서를 분류·요약하는 기능을 검토할 수 있습니다. 열람 권한과 담당자 승인, 실패 시 처리 방법과 이용 비용을 함께 정합니다.",
+    "answer": "사용이 허용된 자료와 업무 목적을 확인해 검색·답변·자동화 범위를 설계합니다. 회사 문서에서 관련 내용을 찾거나 문서를 분류·요약하는 기능을 검토할 수 있습니다. 열람 권한과 담당자 승인, 실패 시 처리 방법과 이용 비용을 함께 정합니다.",
+    "scope": "HOME",
+    "category": "공통",
+    "sortOrder": 5,
+    "featuredOnHome": true,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "consultation-support",
+    "mergedInto": "",
+    "displayOrder": 5,
+    "synonyms": [
+      "회사 자료나 외부 데이터를 활용한 AI 기능도 가능한가요",
+      "공통"
+    ]
+  },
+  {
+    "key": "danwi-faq-06",
+    "slug": "danwi-faq-06",
+    "title": "상담·회신은 몇 시에 가능한가요?",
+    "question": "상담·회신은 몇 시에 가능한가요?",
+    "body": "상담·회신은 매일 09:00–21:00(한국시간)에 진행합니다. 그 밖의 시간에 남긴 온라인 문의는 다음 응대 시간에 확인합니다. 상세 검토·현장 방문·실제 오류 복구 일정은 상황과 합의한 작업 범위를 확인해 안내합니다.",
+    "answer": "상담·회신은 매일 09:00–21:00(한국시간)에 진행합니다. 그 밖의 시간에 남긴 온라인 문의는 다음 응대 시간에 확인합니다. 상세 검토·현장 방문·실제 오류 복구 일정은 상황과 합의한 작업 범위를 확인해 안내합니다.",
+    "scope": "COMMON",
+    "category": "공통",
+    "sortOrder": 6,
+    "featuredOnHome": true,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "consultation-support",
+    "mergedInto": "",
+    "displayOrder": 6,
+    "synonyms": []
+  },
+  {
+    "key": "danwi-faq-07",
+    "slug": "danwi-faq-07",
+    "title": "수정은 몇 회까지 가능한가요?",
+    "question": "수정은 몇 회까지 가능한가요?",
+    "body": "합의한 제작 범위 안에서 수정 5회를 제공합니다. 수정 목록을 한 회차로 묶는 기준은 착수 전에 합의합니다. 합의한 기능의 개발상 버그 보수는 수정 회차와 별도로 처리합니다.",
+    "answer": "합의한 제작 범위 안에서 수정 5회를 제공합니다. 수정 목록을 한 회차로 묶는 기준은 착수 전에 합의합니다. 합의한 기능의 개발상 버그 보수는 수정 회차와 별도로 처리합니다.",
+    "scope": "COMMON",
+    "category": "공통",
+    "sortOrder": 7,
+    "featuredOnHome": true,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "consultation-support",
+    "mergedInto": "",
+    "displayOrder": 7,
+    "synonyms": []
+  },
+  {
+    "key": "danwi-faq-08",
+    "slug": "danwi-faq-08",
+    "title": "오픈 후 개발상 버그가 발생하면 어떻게 하나요?",
+    "question": "오픈 후 개발상 버그가 발생하면 어떻게 하나요?",
+    "body": "합의한 개발 기능의 버그는 횟수 제한 없이 무상 보수합니다. 발생 상황과 재현 정보를 확인해 원인과 처리 결과를 안내합니다. 새로운 기능과 범위 확대, 운영비와 외부 서비스 이용료는 별도로 협의합니다.",
+    "answer": "합의한 개발 기능의 버그는 횟수 제한 없이 무상 보수합니다. 발생 상황과 재현 정보를 확인해 원인과 처리 결과를 안내합니다. 새로운 기능과 범위 확대, 운영비와 외부 서비스 이용료는 별도로 협의합니다.",
+    "scope": "COMMON",
+    "category": "공통",
+    "sortOrder": 8,
+    "featuredOnHome": true,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "consultation-support",
+    "mergedInto": "",
+    "displayOrder": 8,
+    "synonyms": [
+      "오픈 후 개발상 버그가 발생하면 어떻게 하나요",
+      "공통"
+    ]
+  },
+  {
+    "key": "danwi-faq-09",
+    "slug": "danwi-faq-09",
+    "title": "어떤 내용을 직접 바꿀 수 있나요?",
+    "question": "어떤 내용을 직접 바꿀 수 있나요?",
+    "body": "공지, 이미지, 서비스 정보와 FAQ 등 합의한 CMS 항목을 직접 관리할 수 있게 구성합니다. 바꾸는 항목과 승인·공개 권한은 착수 시 정합니다. 새 기능이나 새로운 디자인 개발은 콘텐츠 수정과 구분합니다.",
+    "answer": "공지, 이미지, 서비스 정보와 FAQ 등 합의한 CMS 항목을 직접 관리할 수 있게 구성합니다. 바꾸는 항목과 승인·공개 권한은 착수 시 정합니다. 새 기능이나 새로운 디자인 개발은 콘텐츠 수정과 구분합니다.",
+    "scope": "SERVICE",
+    "category": "홈페이지·CMS",
+    "sortOrder": 9,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "website-development"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "website-cms",
+    "mergedInto": "",
+    "displayOrder": 9,
+    "synonyms": []
+  },
+  {
+    "key": "danwi-faq-10",
+    "slug": "danwi-faq-10",
+    "title": "기존 홈페이지 디자인을 유지할 수 있나요?",
+    "question": "기존 홈페이지 디자인을 유지할 수 있나요?",
+    "body": "유지할 화면과 개선할 동선을 먼저 확인합니다. 현재 코드와 반응형 구조를 점검한 뒤 기존 디자인을 보존하는 범위를 정합니다. 콘텐츠·관리 기능을 추가하면서 화면의 스타일이 어긋나지 않도록 검수합니다.",
+    "answer": "유지할 화면과 개선할 동선을 먼저 확인합니다. 현재 코드와 반응형 구조를 점검한 뒤 기존 디자인을 보존하는 범위를 정합니다. 콘텐츠·관리 기능을 추가하면서 화면의 스타일이 어긋나지 않도록 검수합니다.",
+    "scope": "SERVICE",
+    "category": "홈페이지·CMS",
+    "sortOrder": 10,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "website-development"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "website-cms",
+    "mergedInto": "",
+    "displayOrder": 10,
+    "synonyms": []
+  },
+  {
+    "key": "danwi-faq-11",
+    "slug": "danwi-faq-11",
+    "title": "모바일과 검색 대응도 포함하나요?",
+    "question": "모바일과 검색 대응도 포함하나요?",
+    "body": "합의한 제작 범위에서 휴대폰과 데스크톱의 사용 흐름, 공개 페이지의 검색 대응을 함께 검토합니다. 페이지 제목과 설명, 연결 관계와 공개 정보의 일관성을 확인합니다. 지속적인 콘텐츠 작성이나 검색 개선 운영은 기본 제작과 구분합니다.",
+    "answer": "합의한 제작 범위에서 휴대폰과 데스크톱의 사용 흐름, 공개 페이지의 검색 대응을 함께 검토합니다. 페이지 제목과 설명, 연결 관계와 공개 정보의 일관성을 확인합니다. 지속적인 콘텐츠 작성이나 검색 개선 운영은 기본 제작과 구분합니다.",
+    "scope": "SERVICE",
+    "category": "홈페이지·CMS",
+    "sortOrder": 11,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "website-development"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "website-cms",
+    "mergedInto": "",
+    "displayOrder": 11,
+    "synonyms": [
+      "모바일과 검색 대응도 포함하나요",
+      "홈페이지·CMS"
+    ]
+  },
+  {
+    "key": "danwi-faq-12",
+    "slug": "danwi-faq-12",
+    "title": "글·이미지 자료를 모두 준비해야 하나요?",
+    "question": "글·이미지 자료를 모두 준비해야 하나요?",
+    "body": "보유한 회사 소개, 서비스 자료와 이미지를 먼저 확인합니다. 부족한 내용의 작성이나 이미지 제작 지원은 필요한 범위를 협의합니다. 자료의 사용 권한과 준비 일정도 함께 정합니다.",
+    "answer": "보유한 회사 소개, 서비스 자료와 이미지를 먼저 확인합니다. 부족한 내용의 작성이나 이미지 제작 지원은 필요한 범위를 협의합니다. 자료의 사용 권한과 준비 일정도 함께 정합니다.",
+    "scope": "SERVICE",
+    "category": "홈페이지·CMS",
+    "sortOrder": 12,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "website-development"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "website-cms",
+    "mergedInto": "",
+    "displayOrder": 12,
+    "synonyms": []
+  },
+  {
+    "key": "danwi-faq-13",
+    "slug": "danwi-faq-13",
+    "title": "문의 접수와 운영자 알림을 연결할 수 있나요?",
+    "question": "문의 접수와 운영자 알림을 연결할 수 있나요?",
+    "body": "문의 저장과 운영자 알림을 필요한 채널에 맞춰 연결할 수 있습니다. 알림 발송 실패와 중복 접수, 스팸 처리도 운영 범위에 포함해 검토합니다. 개인정보 안내와 접수 환경이 준비된 뒤 실제 수신을 시작합니다.",
+    "answer": "문의 저장과 운영자 알림을 필요한 채널에 맞춰 연결할 수 있습니다. 알림 발송 실패와 중복 접수, 스팸 처리도 운영 범위에 포함해 검토합니다. 개인정보 안내와 접수 환경이 준비된 뒤 실제 수신을 시작합니다.",
+    "scope": "SERVICE",
+    "category": "홈페이지·CMS",
+    "sortOrder": 13,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "website-development"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "website-cms",
+    "mergedInto": "",
+    "displayOrder": 13,
+    "synonyms": []
+  },
+  {
+    "key": "danwi-faq-14",
+    "slug": "danwi-faq-14",
+    "title": "오픈 후 운영은 어떻게 하나요?",
+    "question": "오픈 후 운영은 어떻게 하나요?",
+    "body": "관리 기능과 운영 계정, 사용 방법을 합의한 범위로 인계합니다. 홈페이지 주소, 자료 보관과 알림 등 실제 사용하는 항목의 비용과 관리 담당자를 정합니다. 문제 발생 시 연락 방법과 이후 기능 추가의 협의 기준도 안내합니다.",
+    "answer": "관리 기능과 운영 계정, 사용 방법을 합의한 범위로 인계합니다. 홈페이지 주소, 자료 보관과 알림 등 실제 사용하는 항목의 비용과 관리 담당자를 정합니다. 문제 발생 시 연락 방법과 이후 기능 추가의 협의 기준도 안내합니다.",
+    "scope": "SERVICE",
+    "category": "홈페이지·CMS",
+    "sortOrder": 14,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "website-development"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "website-cms",
+    "mergedInto": "",
+    "displayOrder": 14,
+    "synonyms": [
+      "오픈 후 운영은 어떻게 하나요",
+      "홈페이지·CMS"
+    ]
+  },
+  {
+    "key": "danwi-faq-15",
+    "slug": "danwi-faq-15",
+    "title": "표로 관리하던 자료를 옮길 수 있나요?",
+    "question": "표로 관리하던 자료를 옮길 수 있나요?",
+    "body": "사용 중인 파일과 항목, 자료량을 먼저 확인합니다. 중복·누락과 값의 형식을 정리한 뒤 이전 규칙과 검증 방법을 정합니다. 기존 자료의 백업과 운영 중 전환 시점도 함께 협의합니다.",
+    "answer": "사용 중인 파일과 항목, 자료량을 먼저 확인합니다. 중복·누락과 값의 형식을 정리한 뒤 이전 규칙과 검증 방법을 정합니다. 기존 자료의 백업과 운영 중 전환 시점도 함께 협의합니다.",
+    "scope": "SERVICE",
+    "category": "관리자·업무 시스템",
+    "sortOrder": 15,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "admin-systems"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "business-systems",
+    "mergedInto": "",
+    "displayOrder": 15,
+    "synonyms": [
+      "표로 관리하던 자료를 옮길 수 있나요",
+      "관리자·업무 시스템"
+    ]
+  },
+  {
+    "key": "danwi-faq-16",
+    "slug": "danwi-faq-16",
+    "title": "직원마다 다른 권한을 줄 수 있나요?",
+    "question": "직원마다 다른 권한을 줄 수 있나요?",
+    "body": "사용자·부서·역할에 맞춰 권한을 설계합니다. 화면 표시뿐 아니라 조회할 데이터와 승인·수정·삭제 등 작업 범위를 서버에서 검증합니다. 권한표와 실제 사용 시나리오로 함께 확인합니다.",
+    "answer": "사용자·부서·역할에 맞춰 권한을 설계합니다. 화면 표시뿐 아니라 조회할 데이터와 승인·수정·삭제 등 작업 범위를 서버에서 검증합니다. 권한표와 실제 사용 시나리오로 함께 확인합니다.",
+    "scope": "SERVICE",
+    "category": "관리자·업무 시스템",
+    "sortOrder": 16,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "admin-systems"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "business-systems",
+    "mergedInto": "",
+    "displayOrder": 16,
+    "synonyms": []
+  },
+  {
+    "key": "danwi-faq-17",
+    "slug": "danwi-faq-17",
+    "title": "우리 회사의 승인 절차를 반영할 수 있나요?",
+    "question": "우리 회사의 승인 절차를 반영할 수 있나요?",
+    "body": "담당자와 처리 상태, 승인 조건과 예외 상황을 먼저 확인합니다. 인터뷰나 필요한 현장 관찰을 통해 현재 업무를 이해한 뒤 시스템에 반영합니다. 승인 취소·재처리·알림과 변경 기록도 필요한 범위로 정합니다.",
+    "answer": "담당자와 처리 상태, 승인 조건과 예외 상황을 먼저 확인합니다. 인터뷰나 필요한 현장 관찰을 통해 현재 업무를 이해한 뒤 시스템에 반영합니다. 승인 취소·재처리·알림과 변경 기록도 필요한 범위로 정합니다.",
+    "scope": "SERVICE",
+    "category": "관리자·업무 시스템",
+    "sortOrder": 17,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "admin-systems"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "business-systems",
+    "mergedInto": "",
+    "displayOrder": 17,
+    "synonyms": []
+  },
+  {
+    "key": "danwi-faq-18",
+    "slug": "danwi-faq-18",
+    "title": "기존 시스템과 연결할 수 있나요?",
+    "question": "기존 시스템과 연결할 수 있나요?",
+    "body": "기존 서비스가 제공하는 연결 기능과 접근 권한, 자료의 형태를 확인한 뒤 범위를 정합니다. 연결할 수 없는 항목이나 이용 제한이 있으면 가능한 대안을 안내합니다. 처리 실패와 중복 등록을 어떻게 확인할지도 함께 정합니다.",
+    "answer": "기존 서비스가 제공하는 연결 기능과 접근 권한, 자료의 형태를 확인한 뒤 범위를 정합니다. 연결할 수 없는 항목이나 이용 제한이 있으면 가능한 대안을 안내합니다. 처리 실패와 중복 등록을 어떻게 확인할지도 함께 정합니다.",
+    "scope": "SERVICE",
+    "category": "관리자·업무 시스템",
+    "sortOrder": 18,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "admin-systems"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "business-systems",
+    "mergedInto": "",
+    "displayOrder": 18,
+    "synonyms": [
+      "기존 시스템과 연결할 수 있나요",
+      "관리자·업무 시스템"
+    ]
+  },
+  {
+    "key": "danwi-faq-19",
+    "slug": "danwi-faq-19",
+    "title": "작업 이력이나 내보내기도 가능한가요?",
+    "question": "작업 이력이나 내보내기도 가능한가요?",
+    "body": "변경 기록을 남길 항목과 열람 범위를 합의해 구성할 수 있습니다. 검색·필터와 파일 내보내기는 필요한 자료와 담당자 권한에 맞춰 개발합니다. 자료 보관 기간과 삭제 기준도 운영 조건으로 함께 확인합니다.",
+    "answer": "변경 기록을 남길 항목과 열람 범위를 합의해 구성할 수 있습니다. 검색·필터와 파일 내보내기는 필요한 자료와 담당자 권한에 맞춰 개발합니다. 자료 보관 기간과 삭제 기준도 운영 조건으로 함께 확인합니다.",
+    "scope": "SERVICE",
+    "category": "관리자·업무 시스템",
+    "sortOrder": 19,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "admin-systems"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "business-systems",
+    "mergedInto": "",
+    "displayOrder": 19,
+    "synonyms": [
+      "작업 이력이나 내보내기도 가능한가요",
+      "관리자·업무 시스템"
+    ]
+  },
+  {
+    "key": "danwi-faq-20",
+    "slug": "danwi-faq-20",
+    "title": "서비스 운영 중에도 기능을 추가할 수 있나요?",
+    "question": "서비스 운영 중에도 기능을 추가할 수 있나요?",
+    "body": "기존 데이터와 사용 흐름에 미치는 영향을 확인한 뒤 확장 범위를 정합니다. 검증 환경과 배포 시점, 필요한 데이터 변경과 복구 준비를 나누어 진행합니다. 현장 앱이 필요하면 기기 기능과 스토어 배포 조건도 별도 협의합니다.",
+    "answer": "기존 데이터와 사용 흐름에 미치는 영향을 확인한 뒤 확장 범위를 정합니다. 검증 환경과 배포 시점, 필요한 데이터 변경과 복구 준비를 나누어 진행합니다. 현장 앱이 필요하면 기기 기능과 스토어 배포 조건도 별도 협의합니다.",
+    "scope": "SERVICE",
+    "category": "관리자·업무 시스템",
+    "sortOrder": 20,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "admin-systems"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "business-systems",
+    "mergedInto": "",
+    "displayOrder": 20,
+    "synonyms": []
+  },
+  {
+    "key": "danwi-faq-21",
+    "slug": "danwi-faq-21",
+    "title": "회사 문서를 AI 답변에 활용할 수 있나요?",
+    "question": "회사 문서를 AI 답변에 활용할 수 있나요?",
+    "body": "사용이 허용된 문서와 실제 질문을 확인합니다. 관련 내용을 찾고 답변에서 출처를 확인할 수 있도록 자료를 정리합니다. 직원별 열람 권한과 근거가 부족할 때 답변을 보류하는 기준도 함께 검수합니다.",
+    "answer": "사용이 허용된 문서와 실제 질문을 확인합니다. 관련 내용을 찾고 답변에서 출처를 확인할 수 있도록 자료를 정리합니다. 직원별 열람 권한과 근거가 부족할 때 답변을 보류하는 기준도 함께 검수합니다.",
+    "scope": "SERVICE",
+    "category": "AI·업무 자동화",
+    "sortOrder": 21,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "ai-automation"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "ai-automation",
+    "mergedInto": "",
+    "displayOrder": 21,
+    "synonyms": [
+      "회사 문서를 AI 답변에 활용할 수 있나요",
+      "AI·업무 자동화"
+    ]
+  },
+  {
+    "key": "danwi-faq-22",
+    "slug": "danwi-faq-22",
+    "title": "외부 데이터나 웹페이지도 연결할 수 있나요?",
+    "question": "외부 데이터나 웹페이지도 연결할 수 있나요?",
+    "body": "사용이 허용된 외부 자료와 공개 정보의 연결을 검토할 수 있습니다. 접근 조건과 자료 이용 권한, 갱신 주기와 이용 제한을 먼저 확인합니다. 필요한 정보와 정당하게 사용할 수 있는 범위를 정해 진행합니다.",
+    "answer": "사용이 허용된 외부 자료와 공개 정보의 연결을 검토할 수 있습니다. 접근 조건과 자료 이용 권한, 갱신 주기와 이용 제한을 먼저 확인합니다. 필요한 정보와 정당하게 사용할 수 있는 범위를 정해 진행합니다.",
+    "scope": "SERVICE",
+    "category": "AI·업무 자동화",
+    "sortOrder": 22,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "ai-automation"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "ai-automation",
+    "mergedInto": "",
+    "displayOrder": 22,
+    "synonyms": [
+      "외부 데이터나 웹페이지도 연결할 수 있나요",
+      "AI·업무 자동화"
+    ]
+  },
+  {
+    "key": "danwi-faq-23",
+    "slug": "danwi-faq-23",
+    "title": "AI 답변의 근거는 어디에서 확인하나요?",
+    "question": "AI 답변의 근거는 어디에서 확인하나요?",
+    "body": "답변에 활용한 문서나 정보의 출처를 함께 확인할 수 있도록 설계합니다. 관련 자료가 없거나 충분하지 않으면 담당자 확인이 필요하다고 안내합니다. 실제 자주 묻는 질문으로 답변 내용과 근거를 함께 검수합니다.",
+    "answer": "답변에 활용한 문서나 정보의 출처를 함께 확인할 수 있도록 설계합니다. 관련 자료가 없거나 충분하지 않으면 담당자 확인이 필요하다고 안내합니다. 실제 자주 묻는 질문으로 답변 내용과 근거를 함께 검수합니다.",
+    "scope": "SERVICE",
+    "category": "AI·업무 자동화",
+    "sortOrder": 23,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "ai-automation"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "ai-automation",
+    "mergedInto": "",
+    "displayOrder": 23,
+    "synonyms": [
+      "AI 답변의 근거는 어디에서 확인하나요",
+      "AI·업무 자동화"
+    ]
+  },
+  {
+    "key": "danwi-faq-24",
+    "slug": "danwi-faq-24",
+    "title": "문서가 바뀌거나 삭제되면 어떻게 하나요?",
+    "question": "문서가 바뀌거나 삭제되면 어떻게 하나요?",
+    "body": "자료 변경과 삭제를 답변에 반영할 범위와 주기를 정합니다. 갱신에 실패하면 담당자가 확인할 수 있도록 처리 방법을 준비합니다. 바뀐 자료가 검색과 답변에 제대로 반영되는지 함께 검수합니다.",
+    "answer": "자료 변경과 삭제를 답변에 반영할 범위와 주기를 정합니다. 갱신에 실패하면 담당자가 확인할 수 있도록 처리 방법을 준비합니다. 바뀐 자료가 검색과 답변에 제대로 반영되는지 함께 검수합니다.",
+    "scope": "SERVICE",
+    "category": "AI·업무 자동화",
+    "sortOrder": 24,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "ai-automation"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "ai-automation",
+    "mergedInto": "",
+    "displayOrder": 24,
+    "synonyms": [
+      "문서가 바뀌거나 삭제되면 어떻게 하나요",
+      "AI·업무 자동화"
+    ]
+  },
+  {
+    "key": "danwi-faq-25",
+    "slug": "danwi-faq-25",
+    "title": "직원에게 공개하면 안 되는 자료는 어떻게 하나요?",
+    "question": "직원에게 공개하면 안 되는 자료는 어떻게 하나요?",
+    "body": "사용자가 열람할 수 있는 문서만 검색·답변에 사용하도록 권한을 설계합니다. 문서·사용자·역할별 범위를 정하고 허용되지 않은 질문을 검증합니다. 원본 자료와 답변의 접근 정책이 일치하도록 확인합니다.",
+    "answer": "사용자가 열람할 수 있는 문서만 검색·답변에 사용하도록 권한을 설계합니다. 문서·사용자·역할별 범위를 정하고 허용되지 않은 질문을 검증합니다. 원본 자료와 답변의 접근 정책이 일치하도록 확인합니다.",
+    "scope": "SERVICE",
+    "category": "AI·업무 자동화",
+    "sortOrder": 25,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "ai-automation"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "ai-automation",
+    "mergedInto": "",
+    "displayOrder": 25,
+    "synonyms": []
+  },
+  {
+    "key": "danwi-faq-26",
+    "slug": "danwi-faq-26",
+    "title": "AI가 잘못 답하거나 자동화가 실패하면 어떻게 하나요?",
+    "question": "AI가 잘못 답하거나 자동화가 실패하면 어떻게 하나요?",
+    "body": "출처와 검수 질문으로 확인하고 근거가 부족하면 답변을 보류하거나 사람에게 연결합니다. 자동화는 실패 기록과 제한된 재시도, 중복 방지와 중단·복구 방법을 정합니다. 정확도 100%나 모든 오류의 자동 복구를 약속하지 않습니다.",
+    "answer": "출처와 검수 질문으로 확인하고 근거가 부족하면 답변을 보류하거나 사람에게 연결합니다. 자동화는 실패 기록과 제한된 재시도, 중복 방지와 중단·복구 방법을 정합니다. 정확도 100%나 모든 오류의 자동 복구를 약속하지 않습니다.",
+    "scope": "SERVICE",
+    "category": "AI·업무 자동화",
+    "sortOrder": 26,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "ai-automation"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "ai-automation",
+    "mergedInto": "",
+    "displayOrder": 26,
+    "synonyms": []
+  },
+  {
+    "key": "danwi-faq-27",
+    "slug": "danwi-faq-27",
+    "title": "자동화가 실제 등록이나 발송까지 할 수 있나요?",
+    "question": "자동화가 실제 등록이나 발송까지 할 수 있나요?",
+    "body": "합의한 작업과 권한 안에서 업무 시스템 등록이나 알림과 연결할 수 있습니다. 발송·수정·결제처럼 영향을 주는 작업은 승인 범위와 담당자를 먼저 정합니다. 단순 문장 생성과 실제 업무 처리 자동화를 구분해 검수합니다.",
+    "answer": "합의한 작업과 권한 안에서 업무 시스템 등록이나 알림과 연결할 수 있습니다. 발송·수정·결제처럼 영향을 주는 작업은 승인 범위와 담당자를 먼저 정합니다. 단순 문장 생성과 실제 업무 처리 자동화를 구분해 검수합니다.",
+    "scope": "SERVICE",
+    "category": "AI·업무 자동화",
+    "sortOrder": 27,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "ai-automation"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "ai-automation",
+    "mergedInto": "",
+    "displayOrder": 27,
+    "synonyms": []
+  },
+  {
+    "key": "danwi-faq-28",
+    "slug": "danwi-faq-28",
+    "title": "데이터 보안과 이용 비용은 어떻게 관리하나요?",
+    "question": "데이터 보안과 이용 비용은 어떻게 관리하나요?",
+    "body": "외부에 전달할 자료와 열람 권한, 처리 조건을 먼저 확인합니다. 사용량과 비용 한도, 응답 지연과 실패 시 처리 방법도 함께 정합니다. 민감한 자료의 사용 범위를 합의하고 실제 업무 조건에 맞춰 검수합니다.",
+    "answer": "외부에 전달할 자료와 열람 권한, 처리 조건을 먼저 확인합니다. 사용량과 비용 한도, 응답 지연과 실패 시 처리 방법도 함께 정합니다. 민감한 자료의 사용 범위를 합의하고 실제 업무 조건에 맞춰 검수합니다.",
+    "scope": "SERVICE",
+    "category": "AI·업무 자동화",
+    "sortOrder": 28,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "ai-automation"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "ai-automation",
+    "mergedInto": "",
+    "displayOrder": 28,
+    "synonyms": [
+      "데이터 보안과 이용 비용은 어떻게 관리하나요",
+      "AI·업무 자동화"
+    ]
+  },
+  {
+    "key": "danwi-faq-29",
+    "slug": "danwi-faq-29",
+    "title": "기존 홈페이지도 검색 대응을 개선할 수 있나요?",
+    "question": "기존 홈페이지도 검색 대응을 개선할 수 있나요?",
+    "body": "현재 공개 정보와 페이지 구성, 수정 권한을 확인한 뒤 우선순위를 정합니다. 유지할 디자인과 기능을 확인하고 필요한 구조와 정보를 개선합니다. 현재 운영 환경에 맞는 변경 범위를 먼저 안내합니다.",
+    "answer": "현재 공개 정보와 페이지 구성, 수정 권한을 확인한 뒤 우선순위를 정합니다. 유지할 디자인과 기능을 확인하고 필요한 구조와 정보를 개선합니다. 현재 운영 환경에 맞는 변경 범위를 먼저 안내합니다.",
+    "scope": "SERVICE",
+    "category": "SEO·GEO",
+    "sortOrder": 29,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "seo-geo"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "seo-geo",
+    "mergedInto": "",
+    "displayOrder": 29,
+    "synonyms": [
+      "기존 홈페이지도 검색 대응을 개선할 수 있나요",
+      "SEO·GEO"
+    ]
+  },
+  {
+    "key": "danwi-faq-30",
+    "slug": "danwi-faq-30",
+    "title": "검색 대응에서 무엇을 실제로 작업하나요?",
+    "question": "검색 대응에서 무엇을 실제로 작업하나요?",
+    "body": "검색 서비스가 읽을 수 있는 공개 페이지, 제목과 설명, 페이지 간 연결을 점검합니다. 서비스 설명과 실제 사례, 고객 질문의 답변을 알맞은 페이지에 정리합니다. 반영한 항목과 이후 관리 방법을 기록해 인계합니다.",
+    "answer": "검색 서비스가 읽을 수 있는 공개 페이지, 제목과 설명, 페이지 간 연결을 점검합니다. 서비스 설명과 실제 사례, 고객 질문의 답변을 알맞은 페이지에 정리합니다. 반영한 항목과 이후 관리 방법을 기록해 인계합니다.",
+    "scope": "SERVICE",
+    "category": "SEO·GEO",
+    "sortOrder": 30,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "seo-geo"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "seo-geo",
+    "mergedInto": "",
+    "displayOrder": 30,
+    "synonyms": [
+      "검색 대응에서 무엇을 실제로 작업하나요",
+      "SEO·GEO"
+    ]
+  },
+  {
+    "key": "danwi-faq-31",
+    "slug": "danwi-faq-31",
+    "title": "검색 순위나 AI 추천이 보장되나요?",
+    "question": "검색 순위나 AI 추천이 보장되나요?",
+    "body": "검색 순위, AI 추천과 문의 수를 보장하지 않습니다. 사이트에 구현한 개선 항목과 실제 관측한 결과를 구분해 안내합니다. 계정 연결과 수집·색인 조건은 별도로 확인합니다.",
+    "answer": "검색 순위, AI 추천과 문의 수를 보장하지 않습니다. 사이트에 구현한 개선 항목과 실제 관측한 결과를 구분해 안내합니다. 계정 연결과 수집·색인 조건은 별도로 확인합니다.",
+    "scope": "SERVICE",
+    "category": "SEO·GEO",
+    "sortOrder": 31,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "seo-geo"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "seo-geo",
+    "mergedInto": "",
+    "displayOrder": 31,
+    "synonyms": []
+  },
+  {
+    "key": "danwi-faq-32",
+    "slug": "danwi-faq-32",
+    "title": "작업 완료와 검색 반영은 같은 시점인가요?",
+    "question": "작업 완료와 검색 반영은 같은 시점인가요?",
+    "body": "개선 내용의 구현 완료와 검색 수집·색인·답변 반영은 별개입니다. 공개 상태와 접근 조건을 확인한 뒤 합의한 관측 방법으로 결과를 확인합니다. 외부 서비스의 반영 시점을 확정해서 약속하지 않습니다.",
+    "answer": "개선 내용의 구현 완료와 검색 수집·색인·답변 반영은 별개입니다. 공개 상태와 접근 조건을 확인한 뒤 합의한 관측 방법으로 결과를 확인합니다. 외부 서비스의 반영 시점을 확정해서 약속하지 않습니다.",
+    "scope": "SERVICE",
+    "category": "SEO·GEO",
+    "sortOrder": 32,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "seo-geo"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "seo-geo",
+    "mergedInto": "",
+    "displayOrder": 32,
+    "synonyms": []
+  },
+  {
+    "key": "danwi-faq-33",
+    "slug": "danwi-faq-33",
+    "title": "FAQ를 페이지로 나누어도 전체 내용을 확인할 수 있나요?",
+    "question": "FAQ를 페이지로 나누어도 전체 내용을 확인할 수 있나요?",
+    "body": "서비스·주제 분류와 다음 페이지 링크로 전체 공개 답변을 읽을 수 있습니다. 검색이나 AI 질문을 사용하지 않아도 공식 안내에 도달할 수 있도록 구성합니다. 질문과 답변은 해당 페이지에서 직접 확인할 수 있습니다.",
+    "answer": "서비스·주제 분류와 다음 페이지 링크로 전체 공개 답변을 읽을 수 있습니다. 검색이나 AI 질문을 사용하지 않아도 공식 안내에 도달할 수 있도록 구성합니다. 질문과 답변은 해당 페이지에서 직접 확인할 수 있습니다.",
+    "scope": "SERVICE",
+    "category": "SEO·GEO",
+    "sortOrder": 33,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "seo-geo"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "seo-geo",
+    "mergedInto": "",
+    "displayOrder": 33,
+    "synonyms": [
+      "FAQ를 페이지로 나누어도 전체 내용을 확인할 수 있나요",
+      "SEO·GEO"
+    ]
+  },
+  {
+    "key": "danwi-faq-34",
+    "slug": "danwi-faq-34",
+    "title": "이후 콘텐츠 운영도 포함되나요?",
+    "question": "이후 콘텐츠 운영도 포함되나요?",
+    "body": "기본 구조 정비와 지속 작성·갱신·측정은 계약 범위를 구분합니다. 관리할 자료와 담당자, 확인 주기를 협의해 안내합니다. 블로그 자동 작성 기능을 기본 제공되는 기능처럼 설명하지 않습니다.",
+    "answer": "기본 구조 정비와 지속 작성·갱신·측정은 계약 범위를 구분합니다. 관리할 자료와 담당자, 확인 주기를 협의해 안내합니다. 블로그 자동 작성 기능을 기본 제공되는 기능처럼 설명하지 않습니다.",
+    "scope": "SERVICE",
+    "category": "SEO·GEO",
+    "sortOrder": 34,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "seo-geo"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "seo-geo",
+    "mergedInto": "",
+    "displayOrder": 34,
+    "synonyms": []
+  },
+  {
+    "key": "danwi-faq-35",
+    "slug": "danwi-faq-35",
+    "title": "합의한 범위의 수정은 몇 회 제공하나요?",
+    "question": "합의한 범위의 수정은 몇 회 제공하나요?",
+    "body": "합의한 제작 범위 안에서 수정 5회를 제공합니다. 회차를 묶는 기준과 검토 방법은 착수 전에 합의합니다. 개발상 버그는 수정 회차와 구분합니다.",
+    "answer": "합의한 제작 범위 안에서 수정 5회를 제공합니다. 회차를 묶는 기준과 검토 방법은 착수 전에 합의합니다. 개발상 버그는 수정 회차와 구분합니다.",
+    "scope": "COMMON",
+    "category": "지원 정책",
+    "sortOrder": 35,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "consultation-support",
+    "mergedInto": "danwi-faq-07",
+    "displayOrder": 35,
+    "synonyms": [
+      "수정",
+      "유지보수",
+      "버그"
+    ]
+  },
+  {
+    "key": "danwi-faq-36",
+    "slug": "danwi-faq-36",
+    "title": "수정 1회의 기준은 무엇인가요?",
+    "question": "수정 1회의 기준은 무엇인가요?",
+    "body": "한 검토 단계에서 모아 전달한 수정 목록을 기준으로 관리하는 방식을 제안합니다. 구체적인 묶음 기준은 착수 전에 합의합니다. 작업 도중 요청을 나누어 전달할 때의 처리도 미리 정합니다.",
+    "answer": "한 검토 단계에서 모아 전달한 수정 목록을 기준으로 관리하는 방식을 제안합니다. 구체적인 묶음 기준은 착수 전에 합의합니다. 작업 도중 요청을 나누어 전달할 때의 처리도 미리 정합니다.",
+    "scope": "COMMON",
+    "category": "지원 정책",
+    "sortOrder": 36,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "consultation-support",
+    "mergedInto": "",
+    "displayOrder": 36,
+    "synonyms": [
+      "수정",
+      "유지보수",
+      "버그"
+    ]
+  },
+  {
+    "key": "danwi-faq-37",
+    "slug": "danwi-faq-37",
+    "title": "수정 범위가 커지면 어떻게 하나요?",
+    "question": "수정 범위가 커지면 어떻게 하나요?",
+    "body": "합의한 범위의 문구·디자인·배치 수정과 새로운 기능을 구분합니다. 범위 확대나 전면 변경은 영향과 비용·일정을 확인한 뒤 협의합니다. 회차만으로 모든 추가 개발을 포함하지 않습니다.",
+    "answer": "합의한 범위의 문구·디자인·배치 수정과 새로운 기능을 구분합니다. 범위 확대나 전면 변경은 영향과 비용·일정을 확인한 뒤 협의합니다. 회차만으로 모든 추가 개발을 포함하지 않습니다.",
+    "scope": "COMMON",
+    "category": "지원 정책",
+    "sortOrder": 37,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "consultation-support",
+    "mergedInto": "",
+    "displayOrder": 37,
+    "synonyms": [
+      "수정",
+      "유지보수",
+      "버그"
+    ]
+  },
+  {
+    "key": "danwi-faq-38",
+    "slug": "danwi-faq-38",
+    "title": "수정과 버그는 어떻게 구분하나요?",
+    "question": "수정과 버그는 어떻게 구분하나요?",
+    "body": "합의한 기능이 명세대로 동작하지 않는 오류를 개발상 버그로 처리합니다. 문구·디자인·배치 변경은 합의 범위의 수정으로 관리합니다. 원인과 범위를 확인하고 분류 기준을 안내합니다.",
+    "answer": "합의한 기능이 명세대로 동작하지 않는 오류를 개발상 버그로 처리합니다. 문구·디자인·배치 변경은 합의 범위의 수정으로 관리합니다. 원인과 범위를 확인하고 분류 기준을 안내합니다.",
+    "scope": "COMMON",
+    "category": "지원 정책",
+    "sortOrder": 38,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "consultation-support",
+    "mergedInto": "",
+    "displayOrder": 38,
+    "synonyms": [
+      "수정",
+      "유지보수",
+      "버그"
+    ]
+  },
+  {
+    "key": "danwi-faq-39",
+    "slug": "danwi-faq-39",
+    "title": "개발상 버그 보수는 횟수 제한이 있나요?",
+    "question": "개발상 버그 보수는 횟수 제한이 있나요?",
+    "body": "합의한 개발 기능의 버그는 횟수 제한 없이 무상 보수합니다. 수정 회차를 차감하지 않습니다. 발생 상황과 재현 정보를 확인해 처리합니다.",
+    "answer": "합의한 개발 기능의 버그는 횟수 제한 없이 무상 보수합니다. 수정 회차를 차감하지 않습니다. 발생 상황과 재현 정보를 확인해 처리합니다.",
+    "scope": "COMMON",
+    "category": "지원 정책",
+    "sortOrder": 39,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "consultation-support",
+    "mergedInto": "danwi-faq-08",
+    "displayOrder": 39,
+    "synonyms": [
+      "수정",
+      "유지보수",
+      "버그"
+    ]
+  },
+  {
+    "key": "danwi-faq-40",
+    "slug": "danwi-faq-40",
+    "title": "무상 보수에 운영비도 포함되나요?",
+    "question": "무상 보수에 운영비도 포함되나요?",
+    "body": "합의한 개발 기능의 버그 보수와 서비스 운영에 드는 비용은 구분합니다. 외부 서비스 이용료, 홈페이지 주소와 자료 보관 등 필요한 운영 항목은 별도입니다. 포함·제외 범위와 청구 주체를 시작 전에 안내합니다.",
+    "answer": "합의한 개발 기능의 버그 보수와 서비스 운영에 드는 비용은 구분합니다. 외부 서비스 이용료, 홈페이지 주소와 자료 보관 등 필요한 운영 항목은 별도입니다. 포함·제외 범위와 청구 주체를 시작 전에 안내합니다.",
+    "scope": "COMMON",
+    "category": "지원 정책",
+    "sortOrder": 40,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "consultation-support",
+    "mergedInto": "",
+    "displayOrder": 40,
+    "synonyms": [
+      "무상 보수에 운영비도 포함되나요",
+      "지원 정책"
+    ]
+  },
+  {
+    "key": "danwi-faq-41",
+    "slug": "danwi-faq-41",
+    "title": "장애를 알릴 때 무엇을 보내면 되나요?",
+    "question": "장애를 알릴 때 무엇을 보내면 되나요?",
+    "body": "발생 화면과 작업 순서, 오류 메시지와 재현 조건을 알려주세요. 확인 가능한 범위에서 원인을 조사하고 처리 결과를 안내합니다. 개인정보나 비밀번호가 포함된 자료는 전달 범위를 먼저 확인합니다.",
+    "answer": "발생 화면과 작업 순서, 오류 메시지와 재현 조건을 알려주세요. 확인 가능한 범위에서 원인을 조사하고 처리 결과를 안내합니다. 개인정보나 비밀번호가 포함된 자료는 전달 범위를 먼저 확인합니다.",
+    "scope": "COMMON",
+    "category": "지원 정책",
+    "sortOrder": 41,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "consultation-support",
+    "mergedInto": "",
+    "displayOrder": 41,
+    "synonyms": [
+      "수정",
+      "유지보수",
+      "버그"
+    ]
+  },
+  {
+    "key": "danwi-faq-42",
+    "slug": "danwi-faq-42",
+    "title": "상담·회신은 몇 시에 가능한가요?",
+    "question": "상담·회신은 몇 시에 가능한가요?",
+    "body": "상담·회신은 매일 09:00–21:00(한국시간)에 진행합니다. 그 밖의 시간에 남긴 온라인 문의는 다음 응대 시간에 확인합니다. 상세 검토·현장 방문·실제 오류 복구 일정은 상황과 합의한 작업 범위를 확인해 안내합니다.",
+    "answer": "상담·회신은 매일 09:00–21:00(한국시간)에 진행합니다. 그 밖의 시간에 남긴 온라인 문의는 다음 응대 시간에 확인합니다. 상세 검토·현장 방문·실제 오류 복구 일정은 상황과 합의한 작업 범위를 확인해 안내합니다.",
+    "scope": "COMMON",
+    "category": "지원 정책",
+    "sortOrder": 42,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "consultation-support",
+    "mergedInto": "danwi-faq-06",
+    "displayOrder": 42,
+    "synonyms": []
+  },
+  {
+    "key": "danwi-faq-43",
+    "slug": "danwi-faq-43",
+    "title": "경기권 발달센터 사례에서 어떤 일을 담당했나요?",
+    "question": "경기권 발달센터 사례에서 어떤 일을 담당했나요?",
+    "body": "기존 홈페이지의 흐름을 유지하면서 콘텐츠 이전과 운영자 CMS, 상담 신청과 알림, 공개 페이지의 검색 대응을 연결한 프로젝트입니다. 공개 가능한 기록에 따라 담당 범위를 설명하며 다른 서비스의 납품 실적처럼 확대하지 않습니다.",
+    "answer": "기존 홈페이지의 흐름을 유지하면서 콘텐츠 이전과 운영자 CMS, 상담 신청과 알림, 공개 페이지의 검색 대응을 연결한 프로젝트입니다. 공개 가능한 기록에 따라 담당 범위를 설명하며 다른 서비스의 납품 실적처럼 확대하지 않습니다.",
+    "scope": "CASE",
+    "category": "사례 전용",
+    "sortOrder": 43,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [],
+    "caseId": "development-center",
+    "indexable": true,
+    "primaryGroup": "consultation-support",
+    "mergedInto": "",
+    "displayOrder": 43,
+    "synonyms": [
+      "경기권 발달센터 사례에서 어떤 일을 담당했나요",
+      "사례 전용"
+    ]
+  },
+  {
+    "key": "danwi-faq-44",
+    "slug": "danwi-faq-44",
+    "title": "경기권 발달센터 검색 대응은 어떻게 진행했나요?",
+    "question": "경기권 발달센터 검색 대응은 어떻게 진행했나요?",
+    "body": "공개 페이지와 서비스 정보, 질문과 답변의 연결을 정비하고 검색에서 확인할 정보를 정리했습니다. 구현한 개선 항목과 외부 검색에서 확인한 결과를 구분해 설명합니다. 검색 순위와 문의 증가를 보장하거나 새로 측정한 수치처럼 제시하지 않습니다.",
+    "answer": "공개 페이지와 서비스 정보, 질문과 답변의 연결을 정비하고 검색에서 확인할 정보를 정리했습니다. 구현한 개선 항목과 외부 검색에서 확인한 결과를 구분해 설명합니다. 검색 순위와 문의 증가를 보장하거나 새로 측정한 수치처럼 제시하지 않습니다.",
+    "scope": "CASE",
+    "category": "사례 전용",
+    "sortOrder": 44,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [],
+    "caseId": "development-center",
+    "indexable": true,
+    "primaryGroup": "consultation-support",
+    "mergedInto": "",
+    "displayOrder": 44,
+    "synonyms": [
+      "경기권 발달센터 검색 대응은 어떻게 진행했나요",
+      "사례 전용"
+    ]
+  },
+  {
+    "key": "danwi-faq-45",
+    "slug": "danwi-faq-45",
+    "title": "같은 사례가 여러 서비스에 연결되는 이유는 무엇인가요?",
+    "question": "같은 사례가 여러 서비스에 연결되는 이유는 무엇인가요?",
+    "body": "한 프로젝트에서 홈페이지·CMS와 검색 대응을 함께 담당했기 때문입니다. 서비스별 관련 사례로 연결하되 전체 작업 사례에서는 한 건으로 집계합니다. 실제 담당 범위는 동일한 사례 상세 페이지에서 확인할 수 있습니다.",
+    "answer": "한 프로젝트에서 홈페이지·CMS와 검색 대응을 함께 담당했기 때문입니다. 서비스별 관련 사례로 연결하되 전체 작업 사례에서는 한 건으로 집계합니다. 실제 담당 범위는 동일한 사례 상세 페이지에서 확인할 수 있습니다.",
+    "scope": "CASE",
+    "category": "사례 전용",
+    "sortOrder": 45,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [],
+    "caseId": "development-center",
+    "indexable": true,
+    "primaryGroup": "consultation-support",
+    "mergedInto": "",
+    "displayOrder": 45,
+    "synonyms": [
+      "같은 사례가 여러 서비스에 연결되는 이유는 무엇인가요",
+      "사례 전용"
+    ]
+  },
+  {
+    "key": "danwi-faq-46",
+    "slug": "danwi-faq-46",
+    "title": "회사에 맞는 관리 방식은 어떻게 정하나요?",
+    "question": "회사에 맞는 관리 방식은 어떻게 정하나요?",
+    "body": "고객이 직접 수정할 내용과 담당자, 자료의 양과 처리 절차를 먼저 확인합니다. 기존 서비스와 유지할 화면, 이후 관리할 사람의 사용 환경도 함께 고려합니다. 필요한 기능과 운영 비용을 비교해 실제 관리 범위를 합의합니다.",
+    "answer": "고객이 직접 수정할 내용과 담당자, 자료의 양과 처리 절차를 먼저 확인합니다. 기존 서비스와 유지할 화면, 이후 관리할 사람의 사용 환경도 함께 고려합니다. 필요한 기능과 운영 비용을 비교해 실제 관리 범위를 합의합니다.",
+    "scope": "COMMON",
+    "category": "운영·상담",
+    "sortOrder": 46,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "consultation-support",
+    "mergedInto": "",
+    "displayOrder": 46,
+    "synonyms": [
+      "회사에 맞는 관리 방식은 어떻게 정하나요",
+      "운영·상담"
+    ]
+  },
+  {
+    "key": "danwi-faq-47",
+    "slug": "danwi-faq-47",
+    "title": "생산 현장에 방문해 업무를 확인할 수 있나요?",
+    "question": "생산 현장에 방문해 업무를 확인할 수 있나요?",
+    "body": "현장 확인이 필요하면 방문 일정·지역·보안·자료 공개와 출장 비용을 사전에 협의할 수 있습니다. 생산일보·입출고·점검 자료와 담당자의 실제 처리와 예외를 확인하거나 대화로 분석합니다. 필요한 분석 범위와 준비할 자료를 상담에서 정합니다.",
+    "answer": "현장 확인이 필요하면 방문 일정·지역·보안·자료 공개와 출장 비용을 사전에 협의할 수 있습니다. 생산일보·입출고·점검 자료와 담당자의 실제 처리와 예외를 확인하거나 대화로 분석합니다. 필요한 분석 범위와 준비할 자료를 상담에서 정합니다.",
+    "scope": "SERVICE",
+    "category": "운영·상담",
+    "sortOrder": 47,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "ai-automation",
+      "admin-systems"
+    ],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "ai-automation",
+    "mergedInto": "",
+    "displayOrder": 47,
+    "synonyms": [
+      "생산 현장에 방문해 업무를 확인할 수 있나요",
+      "업무 자동화"
+    ]
+  },
+  {
+    "key": "danwi-faq-48",
+    "slug": "danwi-faq-48",
+    "title": "홈페이지 기능에 따라 운영비가 달라지나요?",
+    "question": "홈페이지 기능에 따라 운영비가 달라지나요?",
+    "body": "소개 중심의 홈페이지와 회원·문의 저장·업무 처리가 있는 서비스는 필요한 운영 항목이 다릅니다. 기능과 자료 보관량, 예상 이용량을 확인해 필요한 비용을 안내합니다. 제작비와 운영비를 구분하고 모든 서비스에 같은 최소 금액을 적용하지 않습니다.",
+    "answer": "소개 중심의 홈페이지와 회원·문의 저장·업무 처리가 있는 서비스는 필요한 운영 항목이 다릅니다. 기능과 자료 보관량, 예상 이용량을 확인해 필요한 비용을 안내합니다. 제작비와 운영비를 구분하고 모든 서비스에 같은 최소 금액을 적용하지 않습니다.",
+    "scope": "COMMON",
+    "category": "운영·상담",
+    "sortOrder": 48,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "deployment-cost",
+    "mergedInto": "",
+    "displayOrder": 48,
+    "synonyms": [
+      "홈페이지 기능에 따라 운영비가 달라지나요",
+      "운영비"
+    ]
+  },
+  {
+    "key": "danwi-faq-49",
+    "slug": "danwi-faq-49",
+    "title": "문의 개인정보는 어떻게 처리하나요?",
+    "question": "문의 개인정보는 어떻게 처리하나요?",
+    "body": "문의 확인과 회신 목적에 필요한 범위에서 처리합니다. 접수 전 개인정보 안내에서 처리 담당자, 보유기간과 권리 행사 방법을 확인해 주세요. 안내 검수가 완료되기 전에는 문의가 접수되지 않습니다.",
+    "answer": "문의 확인과 회신 목적에 필요한 범위에서 처리합니다. 접수 전 개인정보 안내에서 처리 담당자, 보유기간과 권리 행사 방법을 확인해 주세요. 안내 검수가 완료되기 전에는 문의가 접수되지 않습니다.",
+    "scope": "COMMON",
+    "category": "운영·상담",
+    "sortOrder": 49,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "consultation-support",
+    "mergedInto": "",
+    "displayOrder": 49,
+    "synonyms": []
+  },
+  {
+    "key": "danwi-faq-50",
+    "slug": "danwi-faq-50",
+    "title": "오픈 후 운영 환경을 인계받을 수 있나요?",
+    "question": "오픈 후 운영 환경을 인계받을 수 있나요?",
+    "body": "합의한 운영 계정과 자료, 관리 방법과 비용 항목을 정리해 인계합니다. 자료 백업과 문제 발생 시 연락 방법, 서비스 공개와 이후 변경의 담당 범위도 확인합니다. 관리자가 실제로 필요한 기능을 사용할 수 있도록 안내합니다.",
+    "answer": "합의한 운영 계정과 자료, 관리 방법과 비용 항목을 정리해 인계합니다. 자료 백업과 문제 발생 시 연락 방법, 서비스 공개와 이후 변경의 담당 범위도 확인합니다. 관리자가 실제로 필요한 기능을 사용할 수 있도록 안내합니다.",
+    "scope": "COMMON",
+    "category": "운영·상담",
+    "sortOrder": 50,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "indexable": true,
+    "primaryGroup": "deployment-cost",
+    "mergedInto": "",
+    "displayOrder": 50,
+    "synonyms": [
+      "오픈 후 운영 환경을 인계받을 수 있나요",
+      "운영·상담"
+    ]
+  },
+  {
+    "key": "danwi-faq-51",
+    "slug": "danwi-faq-51",
+    "title": "홈페이지와 웹앱은 무엇이 다른가요?",
+    "question": "홈페이지와 웹앱은 무엇이 다른가요?",
+    "body": "홈페이지는 회사와 서비스 정보 소개에, 웹앱은 예약·입력·조회·상태 확인 등 이용자의 작업 처리에 중심을 둡니다. 필요하면 한 서비스 안에 함께 구성할 수 있습니다. 실제 이용자와 처리할 업무, 관리할 자료를 확인해 범위를 정합니다.",
+    "answer": "홈페이지는 회사와 서비스 정보 소개에, 웹앱은 예약·입력·조회·상태 확인 등 이용자의 작업 처리에 중심을 둡니다. 필요하면 한 서비스 안에 함께 구성할 수 있습니다. 실제 이용자와 처리할 업무, 관리할 자료를 확인해 범위를 정합니다.",
+    "scope": "SERVICE",
+    "category": "website-cms",
+    "sortOrder": 51,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "website-development"
+    ],
+    "caseId": "",
+    "primaryGroup": "website-cms",
+    "synonyms": [
+      "홈페이지와 웹앱은 무엇이 다른가요",
+      "website-cms"
+    ],
+    "indexable": true,
+    "mergedInto": "",
+    "displayOrder": 51
+  },
+  {
+    "key": "danwi-faq-52",
+    "slug": "danwi-faq-52",
+    "title": "모든 홈페이지를 처음부터 새로 만들어야 하나요?",
+    "question": "모든 홈페이지를 처음부터 새로 만들어야 하나요?",
+    "body": "기존 디자인과 기능을 유지하면서 필요한 부분만 개선할 수 있는지 먼저 확인합니다. 현재 서비스를 활용하는 방법과 새로 개발하는 방법의 범위와 비용을 비교해 안내합니다. 전체 재제작은 기존 자료와 운영에 미치는 영향을 확인한 뒤 협의합니다.",
+    "answer": "기존 디자인과 기능을 유지하면서 필요한 부분만 개선할 수 있는지 먼저 확인합니다. 현재 서비스를 활용하는 방법과 새로 개발하는 방법의 범위와 비용을 비교해 안내합니다. 전체 재제작은 기존 자료와 운영에 미치는 영향을 확인한 뒤 협의합니다.",
+    "scope": "SERVICE",
+    "category": "website-cms",
+    "sortOrder": 52,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "website-development"
+    ],
+    "caseId": "",
+    "primaryGroup": "website-cms",
+    "synonyms": [
+      "모든 홈페이지를 처음부터 새로 만들어야 하나요",
+      "기존 홈페이지"
+    ],
+    "indexable": true,
+    "mergedInto": "",
+    "displayOrder": 52
+  },
+  {
+    "key": "danwi-faq-53",
+    "slug": "danwi-faq-53",
+    "title": "현재 사용하는 홈페이지도 개선할 수 있나요?",
+    "question": "현재 사용하는 홈페이지도 개선할 수 있나요?",
+    "body": "현재 이용 중인 서비스의 수정 권한과 제공 기능, 자료 이전 조건을 확인합니다. 화면 개선과 문의 연결, 관리 기능 보완과 이전 중 가능한 범위를 안내합니다. 현재 서비스가 허용하지 않는 기능은 대안과 함께 설명합니다.",
+    "answer": "현재 이용 중인 서비스의 수정 권한과 제공 기능, 자료 이전 조건을 확인합니다. 화면 개선과 문의 연결, 관리 기능 보완과 이전 중 가능한 범위를 안내합니다. 현재 서비스가 허용하지 않는 기능은 대안과 함께 설명합니다.",
+    "scope": "SERVICE",
+    "category": "website-cms",
+    "sortOrder": 53,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "website-development"
+    ],
+    "caseId": "",
+    "primaryGroup": "website-cms",
+    "synonyms": [
+      "현재 사용하는 홈페이지도 개선할 수 있나요",
+      "기존 홈페이지"
+    ],
+    "indexable": true,
+    "mergedInto": "",
+    "displayOrder": 53
+  },
+  {
+    "key": "danwi-faq-54",
+    "slug": "danwi-faq-54",
+    "title": "휴대폰에서 쓰는 화면이나 앱도 만들 수 있나요?",
+    "question": "휴대폰에서 쓰는 화면이나 앱도 만들 수 있나요?",
+    "body": "모바일 화면과 입력·조회 동선을 함께 설계합니다. 카메라·알림·설치·오프라인 이용 등 필요한 기기 기능이 있다면 별도 앱의 필요 여부를 검토합니다. 앱 배포와 심사, 운영 계정과 비용은 일반 홈페이지 제작과 구분해 협의합니다.",
+    "answer": "모바일 화면과 입력·조회 동선을 함께 설계합니다. 카메라·알림·설치·오프라인 이용 등 필요한 기기 기능이 있다면 별도 앱의 필요 여부를 검토합니다. 앱 배포와 심사, 운영 계정과 비용은 일반 홈페이지 제작과 구분해 협의합니다.",
+    "scope": "SERVICE",
+    "category": "website-cms",
+    "sortOrder": 54,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "website-development",
+      "admin-systems"
+    ],
+    "caseId": "",
+    "primaryGroup": "website-cms",
+    "synonyms": [
+      "휴대폰에서 쓰는 화면이나 앱도 만들 수 있나요",
+      "website-cms"
+    ],
+    "indexable": true,
+    "mergedInto": "",
+    "displayOrder": 54
+  },
+  {
+    "key": "danwi-faq-55",
+    "slug": "danwi-faq-55",
+    "title": "로그인·예약·결제도 연결할 수 있나요?",
+    "question": "로그인·예약·결제도 연결할 수 있나요?",
+    "body": "이용자 권한과 예약·결제의 처리 상태, 외부 서비스의 제공 기능을 확인해 범위를 정합니다. 실패·취소와 담당자 확인이 필요한 상황도 함께 검토합니다. 심사와 운영 계정, 이용료와 자료 보호 조건을 시작 전에 안내합니다.",
+    "answer": "이용자 권한과 예약·결제의 처리 상태, 외부 서비스의 제공 기능을 확인해 범위를 정합니다. 실패·취소와 담당자 확인이 필요한 상황도 함께 검토합니다. 심사와 운영 계정, 이용료와 자료 보호 조건을 시작 전에 안내합니다.",
+    "scope": "SERVICE",
+    "category": "website-cms",
+    "sortOrder": 55,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "website-development"
+    ],
+    "caseId": "",
+    "primaryGroup": "website-cms",
+    "synonyms": [
+      "로그인·예약·결제도 연결할 수 있나요",
+      "website-cms"
+    ],
+    "indexable": true,
+    "mergedInto": "",
+    "displayOrder": 55
+  },
+  {
+    "key": "danwi-faq-56",
+    "slug": "danwi-faq-56",
+    "title": "업무 흐름도나 기획서가 없어도 자동화를 의뢰할 수 있나요?",
+    "question": "업무 흐름도나 기획서가 없어도 자동화를 의뢰할 수 있나요?",
+    "body": "네. 지금 쓰는 파일과 화면, 담당자의 처리 순서를 설명해 주시면 됩니다. 반복 입력·전달·대기·확인·예외를 함께 정리하고 먼저 자동화할 범위를 정합니다. 자료 접근 조건과 사람이 판단할 단계, 실패 시 수동 처리 방법도 확인합니다.",
+    "answer": "네. 지금 쓰는 파일과 화면, 담당자의 처리 순서를 설명해 주시면 됩니다. 반복 입력·전달·대기·확인·예외를 함께 정리하고 먼저 자동화할 범위를 정합니다. 자료 접근 조건과 사람이 판단할 단계, 실패 시 수동 처리 방법도 확인합니다.",
+    "scope": "SERVICE",
+    "category": "ai-automation",
+    "sortOrder": 56,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "ai-automation"
+    ],
+    "caseId": "",
+    "primaryGroup": "ai-automation",
+    "synonyms": [
+      "업무 분석",
+      "기획서",
+      "워크플로우",
+      "반복 업무"
+    ],
+    "indexable": true,
+    "mergedInto": "",
+    "displayOrder": 56
+  },
+  {
+    "key": "danwi-faq-57",
+    "slug": "danwi-faq-57",
+    "title": "제조·물류 현장에 방문해서 확인할 수 있나요?",
+    "question": "제조·물류 현장에 방문해서 확인할 수 있나요?",
+    "body": "현장 확인이 필요하면 방문 일정·지역·보안·자료 공개와 출장 비용을 사전에 협의할 수 있습니다. 실제 처리 자료와 담당자의 업무를 확인하거나 대화로 분석합니다. 필요한 분석 범위와 준비할 자료는 상담에서 정합니다.",
+    "answer": "현장 확인이 필요하면 방문 일정·지역·보안·자료 공개와 출장 비용을 사전에 협의할 수 있습니다. 실제 처리 자료와 담당자의 업무를 확인하거나 대화로 분석합니다. 필요한 분석 범위와 준비할 자료는 상담에서 정합니다.",
+    "scope": "SERVICE",
+    "category": "ai-automation",
+    "sortOrder": 57,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "ai-automation",
+      "admin-systems"
+    ],
+    "caseId": "",
+    "primaryGroup": "ai-automation",
+    "synonyms": [
+      "제조·물류 현장에 방문해서 확인할 수 있나요",
+      "업무 자동화"
+    ],
+    "indexable": true,
+    "mergedInto": "danwi-faq-47",
+    "displayOrder": 57
+  },
+  {
+    "key": "danwi-faq-58",
+    "slug": "danwi-faq-58",
+    "title": "모든 반복 업무에 AI가 필요한가요?",
+    "question": "모든 반복 업무에 AI가 필요한가요?",
+    "body": "정해진 계산이나 자료 전달은 규칙에 따른 자동화만으로 충분할 수 있습니다. 문서를 읽거나 내용을 분류하는 등 AI가 도움이 되는 부분을 실제 업무에서 나눕니다. 담당자 승인과 실패 시 수동 처리, 비용과 관리 난이도를 함께 고려합니다.",
+    "answer": "정해진 계산이나 자료 전달은 규칙에 따른 자동화만으로 충분할 수 있습니다. 문서를 읽거나 내용을 분류하는 등 AI가 도움이 되는 부분을 실제 업무에서 나눕니다. 담당자 승인과 실패 시 수동 처리, 비용과 관리 난이도를 함께 고려합니다.",
+    "scope": "SERVICE",
+    "category": "ai-automation",
+    "sortOrder": 58,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "ai-automation"
+    ],
+    "caseId": "",
+    "primaryGroup": "ai-automation",
+    "synonyms": [
+      "모든 반복 업무에 AI가 필요한가요",
+      "업무 자동화"
+    ],
+    "indexable": true,
+    "mergedInto": "",
+    "displayOrder": 58
+  },
+  {
+    "key": "danwi-faq-59",
+    "slug": "danwi-faq-59",
+    "title": "기존 서비스에 AI 기능을 추가할 수 있나요?",
+    "question": "기존 서비스에 AI 기능을 추가할 수 있나요?",
+    "body": "현재 서비스와 연결할 수 있는 범위, 사용할 자료와 실제 질문을 확인합니다. 문서 검색과 답변 보조, 분류·요약처럼 필요한 기능부터 검토합니다. 자료 전달과 열람 권한, 이용료 한도와 담당자 확인이 필요한 작업도 함께 정합니다.",
+    "answer": "현재 서비스와 연결할 수 있는 범위, 사용할 자료와 실제 질문을 확인합니다. 문서 검색과 답변 보조, 분류·요약처럼 필요한 기능부터 검토합니다. 자료 전달과 열람 권한, 이용료 한도와 담당자 확인이 필요한 작업도 함께 정합니다.",
+    "scope": "SERVICE",
+    "category": "ai-automation",
+    "sortOrder": 59,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "ai-automation"
+    ],
+    "caseId": "",
+    "primaryGroup": "ai-automation",
+    "synonyms": [
+      "기존 서비스에 AI 기능을 추가할 수 있나요",
+      "업무 자동화"
+    ],
+    "indexable": true,
+    "mergedInto": "",
+    "displayOrder": 59
+  },
+  {
+    "key": "danwi-faq-60",
+    "slug": "danwi-faq-60",
+    "title": "챗봇만 있으면 공개 FAQ는 없어도 되나요?",
+    "question": "챗봇만 있으면 공개 FAQ는 없어도 되나요?",
+    "body": "이번 사이트에서는 직접 질문하는 창구와 공개 FAQ를 함께 제공합니다. 공식 답변은 서비스·주제 분류와 실제 페이지 링크로도 읽을 수 있게 하며 챗봇이나 검색창을 사용하지 않아도 전체 공개 답변에 도달할 수 있습니다. 채팅만으로 검색 수집이나 AI 인용이 보장되지는 않습니다.",
+    "answer": "이번 사이트에서는 직접 질문하는 창구와 공개 FAQ를 함께 제공합니다. 공식 답변은 서비스·주제 분류와 실제 페이지 링크로도 읽을 수 있게 하며 챗봇이나 검색창을 사용하지 않아도 전체 공개 답변에 도달할 수 있습니다. 채팅만으로 검색 수집이나 AI 인용이 보장되지는 않습니다.",
+    "scope": "SERVICE",
+    "category": "seo-geo",
+    "sortOrder": 60,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "seo-geo"
+    ],
+    "caseId": "",
+    "primaryGroup": "seo-geo",
+    "synonyms": [
+      "챗봇",
+      "공개 FAQ",
+      "AI 검색"
+    ],
+    "indexable": true,
+    "mergedInto": "",
+    "displayOrder": 60
+  },
+  {
+    "key": "danwi-faq-61",
+    "slug": "danwi-faq-61",
+    "title": "소개 중심의 홈페이지도 유지비가 드나요?",
+    "question": "소개 중심의 홈페이지도 유지비가 드나요?",
+    "body": "선택한 운영 환경과 이용 조건에 따라 달라집니다. 홈페이지 주소, 문의 수신과 자료 보관, 추가 기능 등 필요한 항목을 확인합니다. 무료로 이용할 수 있는 범위가 있더라도 회사의 사용 목적과 제한 조건을 확인해 안내합니다.",
+    "answer": "선택한 운영 환경과 이용 조건에 따라 달라집니다. 홈페이지 주소, 문의 수신과 자료 보관, 추가 기능 등 필요한 항목을 확인합니다. 무료로 이용할 수 있는 범위가 있더라도 회사의 사용 목적과 제한 조건을 확인해 안내합니다.",
+    "scope": "COMMON",
+    "category": "deployment-cost",
+    "sortOrder": 61,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "primaryGroup": "deployment-cost",
+    "synonyms": [
+      "소개 중심의 홈페이지도 유지비가 드나요",
+      "운영비"
+    ],
+    "indexable": true,
+    "mergedInto": "",
+    "displayOrder": 61
+  },
+  {
+    "key": "danwi-faq-62",
+    "slug": "danwi-faq-62",
+    "title": "운영비는 어떻게 정하나요?",
+    "question": "운영비는 어떻게 정하나요?",
+    "body": "필요한 기능과 예상 이용량, 자료 보관과 알림 등 실제 사용하는 항목을 확인해 안내합니다. 정기 비용과 사용량에 따라 달라지는 비용을 나누고 청구 주체도 명확히 합니다. 제작비와 운영비를 구분하며 특정 금액을 모든 프로젝트의 기준으로 제시하지 않습니다.",
+    "answer": "필요한 기능과 예상 이용량, 자료 보관과 알림 등 실제 사용하는 항목을 확인해 안내합니다. 정기 비용과 사용량에 따라 달라지는 비용을 나누고 청구 주체도 명확히 합니다. 제작비와 운영비를 구분하며 특정 금액을 모든 프로젝트의 기준으로 제시하지 않습니다.",
+    "scope": "COMMON",
+    "category": "deployment-cost",
+    "sortOrder": 62,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "primaryGroup": "deployment-cost",
+    "synonyms": [
+      "운영비는 어떻게 정하나요",
+      "운영비"
+    ],
+    "indexable": true,
+    "mergedInto": "",
+    "displayOrder": 62
+  },
+  {
+    "key": "danwi-faq-63",
+    "slug": "danwi-faq-63",
+    "title": "자료 보관과 AI 이용료도 운영비에 포함되나요?",
+    "question": "자료 보관과 AI 이용료도 운영비에 포함되나요?",
+    "body": "선택한 서비스와 계약에 따라 포함 범위가 달라집니다. 자료 보관, AI 이용, 문자·메일·결제와 관리 지원 등 필요한 항목을 나누어 안내합니다. 실제로 사용할 기능과 비용 한도를 확인해 예상 운영비를 정리합니다.",
+    "answer": "선택한 서비스와 계약에 따라 포함 범위가 달라집니다. 자료 보관, AI 이용, 문자·메일·결제와 관리 지원 등 필요한 항목을 나누어 안내합니다. 실제로 사용할 기능과 비용 한도를 확인해 예상 운영비를 정리합니다.",
+    "scope": "COMMON",
+    "category": "deployment-cost",
+    "sortOrder": 63,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "primaryGroup": "deployment-cost",
+    "synonyms": [
+      "자료 보관과 AI 이용료도 운영비에 포함되나요",
+      "운영비"
+    ],
+    "indexable": true,
+    "mergedInto": "",
+    "displayOrder": 63
+  },
+  {
+    "key": "danwi-faq-64",
+    "slug": "danwi-faq-64",
+    "title": "무료로 회사 홈페이지를 계속 운영할 수 있나요?",
+    "question": "무료로 회사 홈페이지를 계속 운영할 수 있나요?",
+    "body": "무료 제공 범위가 있어도 회사의 이용 목적과 필요한 기능, 사용량 제한을 확인해야 합니다. 추가 비용이 생길 수 있는 항목과 제한을 미리 안내합니다. 공개 후에도 운영 조건이 맞는지 확인하고 필요한 관리 범위를 정합니다.",
+    "answer": "무료 제공 범위가 있어도 회사의 이용 목적과 필요한 기능, 사용량 제한을 확인해야 합니다. 추가 비용이 생길 수 있는 항목과 제한을 미리 안내합니다. 공개 후에도 운영 조건이 맞는지 확인하고 필요한 관리 범위를 정합니다.",
+    "scope": "COMMON",
+    "category": "deployment-cost",
+    "sortOrder": 64,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "primaryGroup": "deployment-cost",
+    "synonyms": [
+      "무료로 회사 홈페이지를 계속 운영할 수 있나요",
+      "운영비"
+    ],
+    "indexable": true,
+    "mergedInto": "",
+    "displayOrder": 64
+  },
+  {
+    "key": "danwi-faq-65",
+    "slug": "danwi-faq-65",
+    "title": "홈페이지 운영 계정은 누구 명의로 만드나요?",
+    "question": "홈페이지 운영 계정은 누구 명의로 만드나요?",
+    "body": "고객 또는 사전에 합의한 주체의 계정으로 구성합니다. 관리 권한과 요금 청구, 계정 인계 방법을 먼저 정합니다. 자료 백업과 복구, 서비스 변경과 문제 대응의 담당 범위도 함께 확인합니다.",
+    "answer": "고객 또는 사전에 합의한 주체의 계정으로 구성합니다. 관리 권한과 요금 청구, 계정 인계 방법을 먼저 정합니다. 자료 백업과 복구, 서비스 변경과 문제 대응의 담당 범위도 함께 확인합니다.",
+    "scope": "COMMON",
+    "category": "deployment-cost",
+    "sortOrder": 65,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "primaryGroup": "deployment-cost",
+    "synonyms": [
+      "홈페이지 운영 계정은 누구 명의로 만드나요",
+      "운영비"
+    ],
+    "indexable": true,
+    "mergedInto": "",
+    "displayOrder": 65
+  },
+  {
+    "key": "danwi-faq-66",
+    "slug": "danwi-faq-66",
+    "title": "방문자나 AI 사용량이 늘어나면 어떻게 하나요?",
+    "question": "방문자나 AI 사용량이 늘어나면 어떻게 하나요?",
+    "body": "사용량과 비용 항목을 확인하고 알림·한도·확장 기준을 정합니다. 처리 방식을 개선할 부분과 추가 운영 자원이 필요한 부분을 나눕니다. 예상 예산과 서비스 이용 조건을 기준으로 필요한 관리 범위를 협의합니다.",
+    "answer": "사용량과 비용 항목을 확인하고 알림·한도·확장 기준을 정합니다. 처리 방식을 개선할 부분과 추가 운영 자원이 필요한 부분을 나눕니다. 예상 예산과 서비스 이용 조건을 기준으로 필요한 관리 범위를 협의합니다.",
+    "scope": "COMMON",
+    "category": "deployment-cost",
+    "sortOrder": 66,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "primaryGroup": "deployment-cost",
+    "synonyms": [
+      "방문자나 AI 사용량이 늘어나면 어떻게 하나요",
+      "deployment-cost"
+    ],
+    "indexable": true,
+    "mergedInto": "",
+    "displayOrder": 66
+  },
+  {
+    "key": "danwi-faq-67",
+    "slug": "danwi-faq-67",
+    "title": "채팅하면 문의나 견적이 확정되나요?",
+    "question": "채팅하면 문의나 견적이 확정되나요?",
+    "body": "채팅은 공개 서비스와 정책을 안내하는 기능입니다. 문의 폼의 관심 서비스와 내용을 사용자가 확인·수정·제출해야 접수되며 실제 견적·납기·출장과 계약 범위는 담당자가 확인해 안내합니다. 대화만으로 예약·결제·관리자 변경을 실행하지 않습니다.",
+    "answer": "채팅은 공개 서비스와 정책을 안내하는 기능입니다. 문의 폼의 관심 서비스와 내용을 사용자가 확인·수정·제출해야 접수되며 실제 견적·납기·출장과 계약 범위는 담당자가 확인해 안내합니다. 대화만으로 예약·결제·관리자 변경을 실행하지 않습니다.",
+    "scope": "COMMON",
+    "category": "consultation-support",
+    "sortOrder": 67,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [],
+    "caseId": "",
+    "primaryGroup": "consultation-support",
+    "synonyms": [
+      "문의 접수",
+      "채팅",
+      "견적",
+      "예약"
+    ],
+    "indexable": true,
+    "mergedInto": "",
+    "displayOrder": 67
+  },
+  {
+    "key": "danwi-faq-68",
+    "slug": "danwi-faq-68",
+    "title": "관리자 페이지만 별도로 개발할 수 있나요?",
+    "question": "관리자 페이지만 별도로 개발할 수 있나요?",
+    "body": "현재 홈페이지나 업무 시스템에서 관리할 자료와 이용자 권한을 확인합니다. 별도 관리 화면의 범위를 정하고 수정 이력과 기존 운영에 미치는 영향을 검토합니다. 전체 사이트를 다시 만들 필요가 있는지도 함께 판단합니다.",
+    "answer": "현재 홈페이지나 업무 시스템에서 관리할 자료와 이용자 권한을 확인합니다. 별도 관리 화면의 범위를 정하고 수정 이력과 기존 운영에 미치는 영향을 검토합니다. 전체 사이트를 다시 만들 필요가 있는지도 함께 판단합니다.",
+    "scope": "SERVICE",
+    "category": "business-systems",
+    "sortOrder": 68,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "admin-systems"
+    ],
+    "caseId": "",
+    "primaryGroup": "business-systems",
+    "synonyms": [
+      "관리자 페이지만 별도로 개발할 수 있나요",
+      "business-systems"
+    ],
+    "indexable": true,
+    "mergedInto": "",
+    "displayOrder": 68
+  },
+  {
+    "key": "danwi-faq-69",
+    "slug": "danwi-faq-69",
+    "title": "홈페이지 제작과 함께 검색 대응도 할 수 있나요?",
+    "question": "홈페이지 제작과 함께 검색 대응도 할 수 있나요?",
+    "body": "합의한 제작 범위에서 공개 페이지의 구성과 제목·설명, 페이지 간 연결과 검색 서비스가 읽을 정보를 함께 검토합니다. 서비스·사례·FAQ와 블로그의 정보 구조도 정리할 수 있습니다. 지속적인 작성과 갱신, 검색 결과 확인은 기본 제작과 구분합니다.",
+    "answer": "합의한 제작 범위에서 공개 페이지의 구성과 제목·설명, 페이지 간 연결과 검색 서비스가 읽을 정보를 함께 검토합니다. 서비스·사례·FAQ와 블로그의 정보 구조도 정리할 수 있습니다. 지속적인 작성과 갱신, 검색 결과 확인은 기본 제작과 구분합니다.",
+    "scope": "SERVICE",
+    "category": "seo-geo",
+    "sortOrder": 69,
+    "featuredOnHome": false,
+    "relatedServiceSlugs": [
+      "website-development",
+      "seo-geo"
+    ],
+    "caseId": "",
+    "primaryGroup": "seo-geo",
+    "synonyms": [
+      "홈페이지 제작과 함께 검색 대응도 할 수 있나요",
+      "seo-geo"
+    ],
+    "indexable": true,
+    "mergedInto": "",
+    "displayOrder": 69
+  }
+]

@@ -1,0 +1,3 @@
+import {PGlite} from '@electric-sql/pglite';import {mkdir} from 'node:fs/promises';import type {Db} from './types';import {seed} from './store';import {migrateDatabase} from './migrations';import {seedEditorial} from './insights-core';
+// Dev/test only: real PostgreSQL WASM engine. Never bundled or activated on hosted Sites.
+export async function devDatabase(directory?:string){if(directory)await mkdir(directory,{recursive:true});const pg=new PGlite(directory);await pg.waitReady;const wrap=(conn:any,inside=false):Db=>({query:(sql,params)=>conn.query(sql,params),transaction:fn=>inside?fn(wrap(conn,true)):conn.transaction((tx:any)=>fn(wrap(tx,true)))});const db=wrap(pg);await migrateDatabase(db);await seed(db);await seedEditorial(db);return{...db,close:()=>pg.close()};}

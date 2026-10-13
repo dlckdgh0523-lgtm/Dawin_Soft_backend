@@ -1,0 +1,3 @@
+import {createHmac,timingSafeEqual} from 'node:crypto';
+import type {Identity} from './types';
+export function localIdentity(cookie:string,secret:string):Identity|null{try{const value=cookie.split(';').map(x=>x.trim()).find(x=>x.startsWith('danwi_local_session='))?.slice(20);if(!value)return null;const [encoded,mac]=value.split('.');const expected=createHmac('sha256',secret).update(encoded).digest('hex');if(!mac||mac.length!==expected.length||!timingSafeEqual(Buffer.from(mac),Buffer.from(expected)))return null;const data=JSON.parse(Buffer.from(encoded,'base64url').toString('utf8'));if(data.id!=='local-owner'||typeof data.email!=='string'||!Number.isFinite(data.expires)||data.expires<=Date.now())return null;return{id:data.id,email:data.email};}catch{return null;}}

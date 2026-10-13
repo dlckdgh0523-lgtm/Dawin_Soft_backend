@@ -1,0 +1,5 @@
+import {withOperations} from './operations-node';import {processOperations} from './operations-jobs';
+import {postgres} from './db';import {editorialRuntime} from './editorial-runtime';import {seedEditorial} from './insights-core';import {processGeneration,processPublication,schedulerTick} from './insights-jobs';
+if(!process.env.DATABASE_URL||!process.env.SITE_URL)throw new Error('DATABASE_URL and SITE_URL required');
+const db=postgres(process.env.DATABASE_URL);await seedEditorial(db);const rt=withOperations(editorialRuntime({db,identity:null,origin:process.env.SITE_URL,privateSite:process.env.PRIVATE_SITE!=='false',clientKey:'editorial-worker',ownerEmail:process.env.OWNER_EMAIL}));let stop=false;for(const s of ['SIGTERM','SIGINT'])process.on(s,()=>{stop=true;});
+try{while(!stop){try{await schedulerTick(rt);const worked=await processOperations(rt)||await processPublication(rt)||await processGeneration(rt);if(!worked)await new Promise(r=>setTimeout(r,5000));}catch{console.error('Editorial worker: operation deferred; inspect stored job state.');await new Promise(r=>setTimeout(r,10000));}}}finally{await db.close();}

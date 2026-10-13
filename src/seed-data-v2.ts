@@ -1,0 +1,14 @@
+import type {Data,ContentRow} from './types';
+import {serviceContent,serviceOrder,processSteps,homeFaqIds} from './service-content';
+import {faqContent} from './faq-content';
+import {responseHours} from './support-content';
+export const policies={bug:'개발상 버그는 횟수 제한 없이 무상 보수합니다.',revision:'합의한 제작 범위 안에서 수정 5회를 제공합니다.',response:responseHours,roundBasis:'한 검토 단계에서 모아 전달한 수정 목록 (착수 전 합의할 제안)',period:'검토 필요'};
+export const seedData:{id:string;kind:string;body:Data;public:boolean}[]=[
+ {id:'home',kind:'home',public:true,body:{title:'아이디어를 넘어, 운영되는 소프트웨어로.',description:'웹사이트부터 관리자·업무 시스템, AI·업무 자동화까지. 필요한 기능을 정리하고 개발과 배포로 연결합니다.',cta:'프로젝트 문의하기',sections:['hero','solutions','process','policy','faq','contact'],hiddenSections:[],logoAsset:'approved',faqIds:homeFaqIds,processSteps,indexable:true}},
+ ...serviceOrder.map(id=>({id,kind:'service',public:true,body:{slug:id,...serviceContent[id],timeline:'기능 범위·자료 준비·검토 일정과 외부 서비스 승인에 따라 착수일과 일정을 합의합니다.',indexable:true}})),
+ // Stable private ID preserves existing relations; the public DTO uses a neutral ID.
+ {id:'legacy-center',kind:'project',public:true,body:{slug:'development-center',publicId:'development-center',publicDisplayName:'경기권 발달센터',title:'경기권 발달센터 홈페이지·CMS·검색 대응 개선',category:['website-development','seo-geo'],contribution:'대표 수행 프로젝트',body:'기존 화면의 흐름을 유지하면서 콘텐츠 관리, 문의·알림과 공개 페이지의 검색 대응을 연결한 프로젝트입니다.',problem:'콘텐츠 변경이 개발 요청으로 이어지고, 흩어진 정보를 운영·검색 구조에 연결해야 했습니다.',implementation:['기존 콘텐츠 이전과 운영자 CMS','관리자 인증, 상담 신청과 실시간 알림','공개 정보와 검색 페이지 구성 개선','콘텐츠 수집 후 검토·승인·발행','정해진 질문의 AI 검색 언급·인용 확인','서비스 공개와 운영 인계'],result:'운영자가 콘텐츠를 직접 수정하고 검토 후 발행하는 구조를 구축했습니다. 상담과 검색 확인 과정을 운영 화면에 연결했습니다.',evidence:'제공된 프로젝트 기록 기준으로 담당 범위를 정리했습니다. 현재 검색 성과를 새로 실측한 수치는 제시하지 않습니다.',technology:'DB는 콘텐츠 저장, 서버 렌더링은 공개 페이지 출력, CMS는 편집·승인·발행에 사용했습니다. 기업용 RAG나 대규모 업무 자동화 납품 사례로 확대하지 않습니다.',mediaApprovedForPublic:false,privateClientRecord:'기존 고객 기록은 비공개 계약·프로젝트 기록과 이전 콘텐츠 이력에서 보존합니다.',indexable:true}},
+ ...faqContent.map(body=>({id:body.key,kind:'faq',public:true,body})),
+ {id:'settings',kind:'settings',public:false,body:{title:'사이트 운영 설정',contact:'',business:'',privacyConsentRequired:true,privacyApproved:false,privacyController:'',privacyContact:'',privacyRetention:'',privacyRecipients:'',privacyDeletion:'',privacyLegalBasis:'',privacyPurpose:'프로젝트 상담과 문의 회신',privacyBackupRetention:'',privacyLogRetention:'',inquiriesEnabled:false,policies,approvedTimeline:false,timelineDraft:'일정은 기능 범위와 자료 준비, 검토와 외부 승인 조건을 확인해 합의합니다.',searchTools:'미연동',analytics:'미연동',priceReferences:[],faqHomeLimit:4,faqServiceLimit:4,faqPageSize:6,aiEnabled:false,aiModel:'',aiMaxOutputTokens:600,aiDailyRequests:20,aiDailyTokenLimit:20000,aiPrivacyApproved:false}}
+];
+export function fallbackRows():ContentRow[]{return seedData.filter(s=>s.public).map(s=>({id:s.id,kind:s.kind,draft:s.body,published:s.body,revision:1,published_revision:1,updated_at:'2026-10-08T00:00:00Z',published_at:'2026-10-08T00:00:00Z',archived:false}));}

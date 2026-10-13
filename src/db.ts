@@ -1,0 +1,3 @@
+import pg from 'pg';
+import type {Db} from './types';
+export function postgres(connectionString:string):Db & {close():Promise<void>}{const pool=new pg.Pool({connectionString,max:10,connectionTimeoutMillis:10000,statement_timeout:15000});const wrap=(client:pg.Pool|pg.PoolClient):Db=>({query:async(sql,params)=>({rows:(await client.query(sql,params)).rows}),transaction:async fn=>{if(client!==pool)return fn(wrap(client));const conn=await pool.connect();try{await conn.query('BEGIN');const result=await fn(wrap(conn));await conn.query('COMMIT');return result;}catch(e){await conn.query('ROLLBACK');throw e;}finally{conn.release();}}});return{...wrap(pool),close:()=>pool.end()};}

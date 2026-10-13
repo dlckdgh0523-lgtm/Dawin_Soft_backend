@@ -1,0 +1,17 @@
+# Review/deployment example. Requires the separately supplied PostgreSQL environment.
+services:
+  web:
+    build: .
+    image: danwi-editorial:local
+    command: [node, backend/index.js]
+    env_file: .env
+    ports: ["127.0.0.1:5196:5196"]
+    restart: unless-stopped
+    stop_grace_period: 80s
+  editorial-worker:
+    build: .
+    image: danwi-editorial:local
+    command: [node, backend/editorial-worker.js]
+    env_file: .env
+    restart: unless-stopped
+    stop_grace_period: 80s

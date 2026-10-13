@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {mailNotification} from '../src/mail-node';
+assert.equal(mailNotification({}),undefined);
+const bodies:Record<string,any>[]=[];
+const mock:typeof fetch=async(url,init)=>{assert.equal(url,'https://api.resend.com/emails');bodies.push({body:JSON.parse(String(init?.body)),headers:new Headers(init?.headers)});return new Response('{}',{status:202});};
+const send=mailNotification({MAIL_PROVIDER:'resend',MAIL_API_KEY:'fixture-not-a-key',MAIL_FROM:'sender@example.invalid',OWNER_EMAIL:'owner@example.invalid',SITE_URL:'https://danwi.invalid'},mock)!;
+const receipt='11111111-1111-4111-8111-111111111111';
+await send(receipt);await send(receipt);
+assert.equal(bodies[0].headers.get('Idempotency-Key'),bodies[1].headers.get('Idempotency-Key'));
+assert.deepEqual(bodies[0].body.to,['owner@example.invalid']);assert.ok(!/customer@example|0101234|password/.test(JSON.stringify(bodies[0].body)));
+await assert.rejects(send('invalid'));
+const failure=mailNotification({MAIL_PROVIDER:'resend',MAIL_API_KEY:'fixture-not-a-key',MAIL_FROM:'sender@example.invalid',OWNER_EMAIL:'owner@example.invalid',SITE_URL:'https://danwi.invalid'},async()=>new Response('{}',{status:429}))!;
+await assert.rejects(failure(receipt));
+console.log('5 mail adapter checks passed; real network and email sends: 0');

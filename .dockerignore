@@ -1,0 +1,11 @@
+node_modules
+backend
+src/generated.ts
+tests/results
+work
+data
+uploads
+.git
+.env
+.env.*
+*.log

@@ -1,0 +1,2 @@
+import {seedOperations} from '../src/operations-core';
+import {postgres} from '../src/db';import {seed} from '../src/store';import {seedEditorial} from '../src/insights-core';if(!process.env.DATABASE_URL)throw new Error('DATABASE_URL required');const db=postgres(process.env.DATABASE_URL);try{await seed(db);await seedEditorial(db);await seedOperations(db);console.log('Seed complete; existing records preserved');}finally{await db.close();}
