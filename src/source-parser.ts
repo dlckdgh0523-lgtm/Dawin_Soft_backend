@@ -4,7 +4,8 @@ import type {Data} from './types';
 export function parseSource(input:Data){
  const html=String(input.text);if(Buffer.byteLength(html)>2*1024*1024)throw new Error('BODY_LIMIT');
  const declarations=input.xml?html.replace(/<!\[CDATA\[[\s\S]*?\]\]>/g,''):html;
- if(/<!DOCTYPE\s+[^>]*(?:SYSTEM|PUBLIC)|<!ENTITY/i.test(declarations))throw new Error('XML_ENTITY');
+ // HTML parsing does not resolve DTDs; legacy HTML PUBLIC declarations are inert.
+ if(/<!ENTITY/i.test(declarations)||input.xml&&/<!DOCTYPE\s+[^>]*(?:SYSTEM|PUBLIC)/i.test(declarations))throw new Error('XML_ENTITY');
  if(input.xml){if(/<!DOCTYPE/i.test(declarations))throw new Error('XML_DOCTYPE');const dom=new JSDOM(html,{contentType:'text/xml',url:input.url});try{
   const d=dom.window.document,items=[...d.querySelectorAll('item,entry')].slice(0,50).map(n=>({title:(n.querySelector('title')?.textContent??'').slice(0,500),url:n.querySelector('link')?.getAttribute('href')??n.querySelector('link')?.textContent??'',publishedAt:n.querySelector('pubDate,published,updated')?.textContent??'',summary:(n.querySelector('description,summary')?.textContent??'').slice(0,1000)})).flatMap(v=>{try{const u=new URL(v.url,input.url);return ['http:','https:'].includes(u.protocol)&&!u.username&&!u.password?[{...v,url:u.href}]:[];}catch{return [];}});
   return{status:'DISCOVERY_ONLY',title:(d.querySelector('channel>title,feed>title')?.textContent??'').slice(0,500),feedItems:items,excerpt:'',warnings:['RSS/Atom은 발견 경로입니다. 기사 본문은 별도로 확보해야 합니다.']};

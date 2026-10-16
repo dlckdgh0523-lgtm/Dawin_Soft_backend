@@ -8,7 +8,7 @@ const fields:Record<string,string[]>={
  service:[...common,'excludedScopes','operatingConditions','headline','audience','scopes','capabilities','outputs','preparation','processEmphasis','faqIds','relatedProjects','visualLabels','visualCaption','timeline'],
  project:[...common,'publicId','publicDisplayName','category','contribution','problem','implementation','result','evidence','mediaId','mediaApprovedForPublic'],
  faq:[...common,'key','question','answer','scope','category','sortOrder','displayOrder','synonyms','primaryGroup','mergedInto','featuredOnHome','relatedServiceSlugs','caseId'],
- article:[...common,'author','authorType','writingMode','articleType','bodyBlocks','sources','mediaId','imageAlt','categoryId','tagIds','serviceIds','caseIds','commentsEnabled','reactionsEnabled','tocEnabled']
+ article:[...common,'author','authorType','writingMode','reviewMode','articleType','bodyBlocks','sources','mediaId','imageAlt','categoryId','tagIds','serviceIds','caseIds','commentsEnabled','reactionsEnabled','tocEnabled']
 };
 export const publicCaseId='development-center';
 export const legacyCaseId='legacy-center';
