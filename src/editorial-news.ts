@@ -1,6 +1,6 @@
 import {createHash} from 'node:crypto';
-import {assert,uid,type Data,type Runtime} from './types';
-import {editorialConfig} from './insights-core';
+import {assert,uid,Fault,type Data,type Runtime} from './types';
+import {editorialConfig,articleAction,articleRecord,articleState,validatePublicArticle} from './insights-core';
 import {enqueue} from './insights-jobs';
 import {insightsApi} from './insights-api';
 import {approvedUrl} from './source-collector';
@@ -26,6 +26,36 @@ async function applyDraft(rt:Runtime,jobId:string){
  const response=await insightsApi(new Request(rt.origin+'/api/admin/insights/apply-proposal',{method:'POST',headers:{origin:rt.origin,'content-type':'application/json'},body:JSON.stringify({jobId,slug:'news-'+jobId})}),rt);
  assert(response.ok,'자동 초안 저장 실패');return response.json();
 }
+export async function publishReadyNews(rt:Runtime){
+ const db=rt.db!,config=await editorialConfig(db);
+ if(config.paused||!config.enabled||!config.newsEnabled||!config.newsAutoPublish||config.mode!=='AUTO_DRAFT')return;
+ const jobs=(await db.query("SELECT j.id FROM generation_job j WHERE j.input->>'autoNews'='true' AND j.status='SUCCEEDED' AND j.applied_at IS NOT NULL AND NOT EXISTS (SELECT 1 FROM editorial_run r WHERE r.run_key='autopublish:' || j.id) ORDER BY j.created_at LIMIT 3")).rows;
+ for(const candidate of jobs)await db.transaction(async tx=>{
+  // Match the publication path's lock order. All approval and queuing is atomic.
+  await tx.query('SELECT pg_advisory_xact_lock(7435802)');
+  const j=(await tx.query('SELECT * FROM generation_job WHERE id=$1 FOR UPDATE',[candidate.id])).rows[0];
+  const c=await editorialConfig(tx);if(c.paused||!c.enabled||!c.newsEnabled||!c.newsAutoPublish||c.mode!=='AUTO_DRAFT')return;
+  const run=(await tx.query("INSERT INTO editorial_run(id,run_key,kind,status,detail) VALUES($1,$2,'AUTO_NEWS_PUBLICATION','CHECKING',$3::jsonb) ON CONFLICT DO NOTHING RETURNING id",[uid(),'autopublish:'+j.id,JSON.stringify({generationJobId:j.id,contentId:j.applied_content_id})])).rows[0];if(!run)return;
+  try{
+   const row=await articleRecord(tx,j.applied_content_id,true),state=await articleState(tx,row.id);
+   assert(!row.archived&&!row.published&&row.revision===j.applied_revision&&state.state==='DRAFT','편집·승인 상태가 바뀌어 자동 공개를 보류함',409);
+   const stages=(await tx.query("SELECT kind,detail FROM editorial_run WHERE status='SUCCEEDED' AND run_key=ANY($1::text[])",[['DRAFT','FACT_REVIEW','STYLE_EDIT','FINAL_REVIEW'].map(stage=>j.id+':'+stage+':'+j.attempts)])).rows;
+   assert(stages.length===4,'AI 작성·검토 4단계 기록이 없음',422);
+   const review=stages.find(s=>s.kind==='FINAL_REVIEW');assert(Array.isArray(review?.detail.issues)&&review.detail.issues.length===0,'최종 검토 지적이 남아 있어 자동 공개를 보류함',422);
+   const prose=[row.draft.title,row.draft.description,...row.draft.bodyBlocks.map((b:Data)=>b.text??'')].join('\n');
+   assert(!/["'“”‘’()]/.test(prose),'요청한 문체 규칙 확인 필요',422);
+   assert(!/[\w.+-]+@[\w.-]+\.[a-z]{2,}|010[-\s]?\d{4}[-\s]?\d{4}|(?:password|api[ _-]?key|secret|비밀번호)\s*[:=]|직접.{0,12}(테스트|방문|납품)|실측/i.test(prose),'개인정보·비밀·직접 수행 경험 검토 필요',422);
+   assert(row.draft.articleType==='news'&&row.draft.reviewMode==='automated','자동 뉴스 표시 확인 필요',422);
+   await validatePublicArticle(tx,row.draft);
+   const reason='AUTO_NEWS: 운영자가 허용한 자동 승인. 공식 원문 구간 검증, 4단계 AI 작성·최종 검토 무지적, 개인정보·문체 검사 통과. 사람의 개별 검수는 아님.';
+   const op={...rt,db:tx};await articleAction(op,row.id,'request-review',{revision:row.revision,reason});
+   await articleAction(op,row.id,'approve',{revision:row.revision,reason,factChecked:true,privacyChecked:true,experienceChecked:true});
+   const result=await articleAction(op,row.id,'publish',{revision:row.revision});
+   await tx.query("UPDATE editorial_run SET status='QUEUED',detail=detail || $2::jsonb WHERE id=$1",[run.id,JSON.stringify({publishJobId:'jobId' in result?result.jobId:null,revision:row.revision})]);
+  }catch(e){if(!(e instanceof Fault))throw e;await tx.query("UPDATE editorial_run SET status='NEEDS_REVIEW',detail=detail || $2::jsonb WHERE id=$1",[run.id,JSON.stringify({reason:e.message})]);}
+ });
+ await db.query("UPDATE editorial_run r SET status=upper(j.status),detail=r.detail || jsonb_build_object('publicationError',j.error) FROM publish_job j WHERE r.kind='AUTO_NEWS_PUBLICATION' AND r.status='QUEUED' AND r.detail->>'publishJobId'=j.id AND j.status IN('succeeded','failed','cancelled','skipped')");
+}
 export async function newsTick(rt:Runtime,now=new Date()){
  const db=rt.db!,c=await editorialConfig(db);
  if(!c.newsEnabled||!c.enabled||c.paused||c.mode!=='AUTO_DRAFT'||!c.collectEnabled||!c.aiEnabled||!c.sourcesApproved||!rt.editorial?.collect)return;
@@ -36,6 +66,7 @@ export async function newsTick(rt:Runtime,now=new Date()){
  for(const job of completed){const saved=await applyDraft(operatorRt,job.id);await db.query("UPDATE editorial_run SET status='SUCCEEDED',detail=detail || $2::jsonb WHERE detail->>'jobId'=$1",[job.id,JSON.stringify({contentId:saved.id,revision:saved.revision})]);}
  await db.query("UPDATE editorial_run r SET status=j.status,detail=r.detail || jsonb_build_object('reason',coalesce(j.error_message,j.status)) FROM generation_job j WHERE r.kind='DAILY_NEWS' AND r.status='WRITING' AND r.detail->>'jobId'=j.id AND j.status IN('FAILED','NEEDS_SOURCE','NEEDS_CONFIGURATION','SKIPPED','CANCELLED')");
  await db.query("UPDATE editorial_run r SET status='SUCCEEDED',detail=r.detail || jsonb_build_object('contentId',j.applied_content_id,'revision',j.applied_revision) FROM generation_job j WHERE r.kind='DAILY_NEWS' AND r.status='WRITING' AND r.detail->>'jobId'=j.id AND j.applied_at IS NOT NULL");
+ await publishReadyNews(operatorRt);
  const local=new Date(+now+9*3600000),date=local.toISOString().slice(0,10),hour=local.getUTCHours();if(hour<c.collectionHour)return;
  const key='news:'+date,token=uid();
  await db.query("INSERT INTO editorial_run(id,run_key,kind,status,detail) VALUES($1,$2,'DAILY_NEWS','PENDING','{}') ON CONFLICT DO NOTHING",[uid(),key]);

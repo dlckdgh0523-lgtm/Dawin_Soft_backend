@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import {devDatabase} from '../src/pglite-dev';
 import {operator} from '../src/store';
 import {articleRecord,articleAction,articleState,saveArticle,sourceFingerprint,editorialConfig,taxonomyAction} from '../src/insights-core';
-import {newsTick,freshNews,newsEvidence} from '../src/editorial-news';
+import {newsTick,freshNews,newsEvidence,publishReadyNews} from '../src/editorial-news';
 import {resolveCitations} from '../src/editorial-ai';
 import {enqueue,processGeneration,processPublication,reserveUsage,schedulerTick} from '../src/insights-jobs';
 import {insightsApi} from '../src/insights-api';
@@ -67,6 +67,19 @@ try{
  await db.query("UPDATE editorial_run SET status='WRITING' WHERE run_key='news:2099-03-01'");await newsTick(newsRt,now);assert.equal((await db.query("SELECT status FROM editorial_run WHERE run_key='news:2099-03-01'")).rows[0].status,'SUCCEEDED');
  await newsTick(newsRt,new Date('2099-03-02T01:00:00Z'));await processGeneration(newsRt);await newsTick(newsRt,new Date('2099-03-02T01:00:00Z'));assert.equal((await db.query("SELECT status FROM editorial_run WHERE run_key='news:2099-03-02'")).rows[0].status,'NEEDS_SOURCE');assert.equal((await db.query("SELECT count(*)::int AS n FROM generation_job WHERE input->>'newsDate'='2099-03-02'")).rows[0].n,0);
  await config({paused:true});const before=reads;await newsTick(newsRt,new Date('2099-03-03T01:00:00Z'));assert.equal(reads,before);await config({newsEnabled:false,enabled:false});
+ });
+ await tested('automatic publication requires clean final review, preserves edits and respects revocation',async()=>{
+ await config({enabled:true,newsEnabled:true,newsAutoPublish:true,mode:'AUTO_DRAFT',newsFeeds:['https://example.com/feed']});
+ const original=(await db.query("SELECT * FROM generation_job WHERE input->>'newsDate'='2099-03-01'")).rows[0];
+ await publishReadyNews(rt);await publishReadyNews(rt);await processPublication(rt);await publishReadyNews(rt);
+ const published=await articleRecord(db,original.applied_content_id);assert.ok(published.published);assert.equal(published.published!.reviewMode,'automated');
+ assert.equal((await db.query('SELECT count(*)::int AS n FROM publish_job WHERE content_id=$1',[published.id])).rows[0].n,1);
+ const html=await (await handle(new Request(rt.origin+'/insights/'+published.draft.slug),{...rt,identity:null})).text();assert.match(html,/AI 작성·자동 검증/);
+ async function ready(id:string,issues:string[]){const saved=await saveArticle(rt,id,{...published.draft,slug:id});await db.query("INSERT INTO generation_job(id,idempotency_key,kind,status,input,proposal,actor,attempts,applied_content_id,applied_revision,applied_at) VALUES($1,$1,'GENERATE','SUCCEEDED',$2::jsonb,$3::jsonb,'qa-owner',1,$1,$4,now())",[id,JSON.stringify({...original.input,newsDate:'2099-04-01'}),JSON.stringify(original.proposal),saved.revision]);for(const stage of ['DRAFT','FACT_REVIEW','STYLE_EDIT','FINAL_REVIEW'])await db.query("INSERT INTO editorial_run(id,run_key,kind,status,detail) VALUES($1,$2,$3,'SUCCEEDED',$4::jsonb)",[id+'-'+stage,id+':'+stage+':1',stage,JSON.stringify({issues:stage==='FINAL_REVIEW'?issues:[]})]);}
+ await ready('qa-auto-issue',['근거 없는 수치']);await ready('qa-auto-edit',[]);await saveArticle(rt,'qa-auto-edit',{...published.draft,slug:'qa-auto-edit',title:'운영자가 편집한 제목'},1);await publishReadyNews(rt);
+ for(const id of ['qa-auto-issue','qa-auto-edit']){assert.equal((await articleRecord(db,id)).published,null);assert.equal((await db.query('SELECT status FROM editorial_run WHERE run_key=$1',['autopublish:'+id])).rows[0].status,'NEEDS_REVIEW');assert.equal((await db.query('SELECT count(*)::int AS n FROM publish_job WHERE content_id=$1',[id])).rows[0].n,0);}
+ await ready('qa-auto-revoke',[]);await publishReadyNews(rt);await config({newsAutoPublish:false});await processPublication(rt);assert.equal((await articleRecord(db,'qa-auto-revoke')).published,null);assert.equal((await db.query("SELECT status FROM publish_job WHERE content_id='qa-auto-revoke'")).rows[0].status,'failed');
+ await config({newsEnabled:false,enabled:false,newsAutoPublish:false});
  });
  console.log(JSON.stringify({passed:checks,modelFixtureCalls:calls,externalHttpCalls:0,liveAiCalls:0,database:'isolated PostgreSQL WASM engine; real multi-connection PG pending'}));
 }finally{await db.close();}
